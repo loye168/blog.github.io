@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>loye的个人博客</title>
-  <icon>https://tding.top/icon.png</icon>
+  <icon>https://loye168.github.io/icon.png</icon>
   <subtitle>世间所有的相遇，都是久别重逢</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://tding.top/"/>
+  <link href="https://loye168.github.io/"/>
   <updated>2020-06-27T04:12:33.816Z</updated>
-  <id>https://tding.top/</id>
+  <id>https://loye168.github.io/</id>
   
   <author>
     <name>loye</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>梅花品种-3系5类18型</title>
-    <link href="https://tding.top/archives/290f3ac4.html"/>
-    <id>https://tding.top/archives/290f3ac4.html</id>
+    <link href="https://loye168.github.io/archives/290f3ac4.html"/>
+    <id>https://loye168.github.io/archives/290f3ac4.html</id>
     <published>2020-06-27T04:00:00.000Z</published>
     <updated>2020-06-27T04:12:33.816Z</updated>
     
@@ -30,21 +30,21 @@
     </summary>
     
     
-      <category term="生活" scheme="https://tding.top/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://loye168.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
-      <category term="植物" scheme="https://tding.top/categories/%E7%94%9F%E6%B4%BB/%E6%A4%8D%E7%89%A9/"/>
+      <category term="植物" scheme="https://loye168.github.io/categories/%E7%94%9F%E6%B4%BB/%E6%A4%8D%E7%89%A9/"/>
     
     
-      <category term="植物" scheme="https://tding.top/tags/%E6%A4%8D%E7%89%A9/"/>
+      <category term="植物" scheme="https://loye168.github.io/tags/%E6%A4%8D%E7%89%A9/"/>
     
-      <category term="梅花" scheme="https://tding.top/tags/%E6%A2%85%E8%8A%B1/"/>
+      <category term="梅花" scheme="https://loye168.github.io/tags/%E6%A2%85%E8%8A%B1/"/>
     
   </entry>
   
   <entry>
     <title>LeanCloud云引擎因流控无法唤醒解决方案</title>
-    <link href="https://tding.top/archives/d179c86b.html"/>
-    <id>https://tding.top/archives/d179c86b.html</id>
+    <link href="https://loye168.github.io/archives/d179c86b.html"/>
+    <id>https://loye168.github.io/archives/d179c86b.html</id>
     <published>2020-06-01T14:00:00.000Z</published>
     <updated>2020-06-25T05:06:46.856Z</updated>
     
@@ -59,23 +59,23 @@
     </summary>
     
     
-      <category term="工具使用" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具使用" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-      <category term="Hexo" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://tding.top/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/tags/Hexo/"/>
     
-      <category term="Valine" scheme="https://tding.top/tags/Valine/"/>
+      <category term="Valine" scheme="https://loye168.github.io/tags/Valine/"/>
     
-      <category term="LeanCloud" scheme="https://tding.top/tags/LeanCloud/"/>
+      <category term="LeanCloud" scheme="https://loye168.github.io/tags/LeanCloud/"/>
     
   </entry>
   
   <entry>
     <title>Word公式如何多行对齐</title>
-    <link href="https://tding.top/archives/192fb032.html"/>
-    <id>https://tding.top/archives/192fb032.html</id>
+    <link href="https://loye168.github.io/archives/192fb032.html"/>
+    <id>https://loye168.github.io/archives/192fb032.html</id>
     <published>2020-05-09T15:00:00.000Z</published>
     <updated>2020-05-10T07:41:24.028Z</updated>
     
@@ -86,19 +86,19 @@
     </summary>
     
     
-      <category term="工具使用" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具使用" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-      <category term="软件" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Word" scheme="https://tding.top/tags/Word/"/>
+      <category term="Word" scheme="https://loye168.github.io/tags/Word/"/>
     
   </entry>
   
   <entry>
     <title>Word题注对图表进行自动化标号</title>
-    <link href="https://tding.top/archives/ee1790c8.html"/>
-    <id>https://tding.top/archives/ee1790c8.html</id>
+    <link href="https://loye168.github.io/archives/ee1790c8.html"/>
+    <id>https://loye168.github.io/archives/ee1790c8.html</id>
     <published>2020-05-09T14:00:00.000Z</published>
     <updated>2020-05-10T07:37:28.902Z</updated>
     
@@ -114,21 +114,21 @@
     </summary>
     
     
-      <category term="工具使用" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具使用" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-      <category term="软件" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Word" scheme="https://tding.top/tags/Word/"/>
+      <category term="Word" scheme="https://loye168.github.io/tags/Word/"/>
     
-      <category term="题注" scheme="https://tding.top/tags/%E9%A2%98%E6%B3%A8/"/>
+      <category term="题注" scheme="https://loye168.github.io/tags/%E9%A2%98%E6%B3%A8/"/>
     
   </entry>
   
   <entry>
     <title>新冠肺炎疫情数据可视化</title>
-    <link href="https://tding.top/archives/e1eb25a0.html"/>
-    <id>https://tding.top/archives/e1eb25a0.html</id>
+    <link href="https://loye168.github.io/archives/e1eb25a0.html"/>
+    <id>https://loye168.github.io/archives/e1eb25a0.html</id>
     <published>2020-02-06T15:30:00.000Z</published>
     <updated>2020-02-21T09:45:37.618Z</updated>
     
@@ -148,23 +148,23 @@
     </summary>
     
     
-      <category term="生活" scheme="https://tding.top/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://loye168.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
-      <category term="社会事件" scheme="https://tding.top/categories/%E7%94%9F%E6%B4%BB/%E7%A4%BE%E4%BC%9A%E4%BA%8B%E4%BB%B6/"/>
+      <category term="社会事件" scheme="https://loye168.github.io/categories/%E7%94%9F%E6%B4%BB/%E7%A4%BE%E4%BC%9A%E4%BA%8B%E4%BB%B6/"/>
     
     
-      <category term="数据可视化" scheme="https://tding.top/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="https://loye168.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
-      <category term="新冠肺炎" scheme="https://tding.top/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/"/>
+      <category term="新冠肺炎" scheme="https://loye168.github.io/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/"/>
     
-      <category term="2020" scheme="https://tding.top/tags/2020/"/>
+      <category term="2020" scheme="https://loye168.github.io/tags/2020/"/>
     
   </entry>
   
   <entry>
     <title>【R语言】readr笔记</title>
-    <link href="https://tding.top/archives/a61fec0e.html"/>
-    <id>https://tding.top/archives/a61fec0e.html</id>
+    <link href="https://loye168.github.io/archives/a61fec0e.html"/>
+    <id>https://loye168.github.io/archives/a61fec0e.html</id>
     <published>2020-02-02T14:40:00.000Z</published>
     <updated>2020-05-07T08:07:44.709Z</updated>
     
@@ -175,21 +175,21 @@
     </summary>
     
     
-      <category term="R" scheme="https://tding.top/categories/R/"/>
+      <category term="R" scheme="https://loye168.github.io/categories/R/"/>
     
-      <category term="数据处理" scheme="https://tding.top/categories/R/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+      <category term="数据处理" scheme="https://loye168.github.io/categories/R/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
     
     
-      <category term="R" scheme="https://tding.top/tags/R/"/>
+      <category term="R" scheme="https://loye168.github.io/tags/R/"/>
     
-      <category term="tidyverse" scheme="https://tding.top/tags/tidyverse/"/>
+      <category term="tidyverse" scheme="https://loye168.github.io/tags/tidyverse/"/>
     
   </entry>
   
   <entry>
     <title>【R语言】tibble笔记</title>
-    <link href="https://tding.top/archives/80be9be7.html"/>
-    <id>https://tding.top/archives/80be9be7.html</id>
+    <link href="https://loye168.github.io/archives/80be9be7.html"/>
+    <id>https://loye168.github.io/archives/80be9be7.html</id>
     <published>2020-02-02T14:30:00.000Z</published>
     <updated>2020-05-06T07:23:17.855Z</updated>
     
@@ -200,21 +200,21 @@
     </summary>
     
     
-      <category term="R" scheme="https://tding.top/categories/R/"/>
+      <category term="R" scheme="https://loye168.github.io/categories/R/"/>
     
-      <category term="数据处理" scheme="https://tding.top/categories/R/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+      <category term="数据处理" scheme="https://loye168.github.io/categories/R/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
     
     
-      <category term="R" scheme="https://tding.top/tags/R/"/>
+      <category term="R" scheme="https://loye168.github.io/tags/R/"/>
     
-      <category term="tidyverse" scheme="https://tding.top/tags/tidyverse/"/>
+      <category term="tidyverse" scheme="https://loye168.github.io/tags/tidyverse/"/>
     
   </entry>
   
   <entry>
     <title>【R语言】dplyr笔记</title>
-    <link href="https://tding.top/archives/372a6b87.html"/>
-    <id>https://tding.top/archives/372a6b87.html</id>
+    <link href="https://loye168.github.io/archives/372a6b87.html"/>
+    <id>https://loye168.github.io/archives/372a6b87.html</id>
     <published>2020-02-01T14:30:00.000Z</published>
     <updated>2020-05-06T07:20:23.063Z</updated>
     
@@ -225,23 +225,23 @@
     </summary>
     
     
-      <category term="R" scheme="https://tding.top/categories/R/"/>
+      <category term="R" scheme="https://loye168.github.io/categories/R/"/>
     
-      <category term="数据处理" scheme="https://tding.top/categories/R/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+      <category term="数据处理" scheme="https://loye168.github.io/categories/R/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
     
     
-      <category term="R" scheme="https://tding.top/tags/R/"/>
+      <category term="R" scheme="https://loye168.github.io/tags/R/"/>
     
-      <category term="tidyverse" scheme="https://tding.top/tags/tidyverse/"/>
+      <category term="tidyverse" scheme="https://loye168.github.io/tags/tidyverse/"/>
     
-      <category term="dplyr" scheme="https://tding.top/tags/dplyr/"/>
+      <category term="dplyr" scheme="https://loye168.github.io/tags/dplyr/"/>
     
   </entry>
   
   <entry>
     <title>Matplotlib系列之标注</title>
-    <link href="https://tding.top/archives/b6c1b732.html"/>
-    <id>https://tding.top/archives/b6c1b732.html</id>
+    <link href="https://loye168.github.io/archives/b6c1b732.html"/>
+    <id>https://loye168.github.io/archives/b6c1b732.html</id>
     <published>2020-01-27T04:15:00.000Z</published>
     <updated>2020-01-27T06:51:53.156Z</updated>
     
@@ -252,23 +252,23 @@
     </summary>
     
     
-      <category term="Python" scheme="https://tding.top/categories/Python/"/>
+      <category term="Python" scheme="https://loye168.github.io/categories/Python/"/>
     
-      <category term="数据可视化" scheme="https://tding.top/categories/Python/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="https://loye168.github.io/categories/Python/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
     
-      <category term="Python" scheme="https://tding.top/tags/Python/"/>
+      <category term="Python" scheme="https://loye168.github.io/tags/Python/"/>
     
-      <category term="matplotlib" scheme="https://tding.top/tags/matplotlib/"/>
+      <category term="matplotlib" scheme="https://loye168.github.io/tags/matplotlib/"/>
     
-      <category term="数据可视化" scheme="https://tding.top/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="https://loye168.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>Matplotlib系列之LineStyles及Markers</title>
-    <link href="https://tding.top/archives/1439dcd2.html"/>
-    <id>https://tding.top/archives/1439dcd2.html</id>
+    <link href="https://loye168.github.io/archives/1439dcd2.html"/>
+    <id>https://loye168.github.io/archives/1439dcd2.html</id>
     <published>2020-01-23T13:10:00.000Z</published>
     <updated>2020-01-23T13:19:42.280Z</updated>
     
@@ -279,50 +279,50 @@
     </summary>
     
     
-      <category term="Python" scheme="https://tding.top/categories/Python/"/>
+      <category term="Python" scheme="https://loye168.github.io/categories/Python/"/>
     
-      <category term="数据可视化" scheme="https://tding.top/categories/Python/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="https://loye168.github.io/categories/Python/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
     
-      <category term="Python" scheme="https://tding.top/tags/Python/"/>
+      <category term="Python" scheme="https://loye168.github.io/tags/Python/"/>
     
-      <category term="matplotlib" scheme="https://tding.top/tags/matplotlib/"/>
+      <category term="matplotlib" scheme="https://loye168.github.io/tags/matplotlib/"/>
     
-      <category term="数据可视化" scheme="https://tding.top/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="https://loye168.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>Matplotlib系列之画布与坐标轴设置</title>
-    <link href="https://tding.top/archives/21d3feb6.html"/>
-    <id>https://tding.top/archives/21d3feb6.html</id>
+    <link href="https://loye168.github.io/archives/21d3feb6.html"/>
+    <id>https://loye168.github.io/archives/21d3feb6.html</id>
     <published>2020-01-22T12:00:00.000Z</published>
     <updated>2020-01-22T12:31:01.547Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;通过&lt;a href=&quot;https://tding.top/archives/ea3d181f.html&quot;&gt;Matplotlib系列之简述&lt;/a&gt;这篇文章，我们已经从宏观上大致了解了Matplotlib图像的组成部分。今天，我们主要介绍画布与坐标轴这两个概念，并详细介绍一下坐标轴属性设置以及脊柱设置。&lt;/p&gt;
+      &lt;p&gt;通过&lt;a href=&quot;https://loye168.github.io/archives/ea3d181f.html&quot;&gt;Matplotlib系列之简述&lt;/a&gt;这篇文章，我们已经从宏观上大致了解了Matplotlib图像的组成部分。今天，我们主要介绍画布与坐标轴这两个概念，并详细介绍一下坐标轴属性设置以及脊柱设置。&lt;/p&gt;
     
     </summary>
     
     
-      <category term="Python" scheme="https://tding.top/categories/Python/"/>
+      <category term="Python" scheme="https://loye168.github.io/categories/Python/"/>
     
-      <category term="数据可视化" scheme="https://tding.top/categories/Python/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="https://loye168.github.io/categories/Python/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
     
-      <category term="Python" scheme="https://tding.top/tags/Python/"/>
+      <category term="Python" scheme="https://loye168.github.io/tags/Python/"/>
     
-      <category term="matplotlib" scheme="https://tding.top/tags/matplotlib/"/>
+      <category term="matplotlib" scheme="https://loye168.github.io/tags/matplotlib/"/>
     
-      <category term="数据可视化" scheme="https://tding.top/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="https://loye168.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>Matplotlib系列之简述</title>
-    <link href="https://tding.top/archives/ea3d181f.html"/>
-    <id>https://tding.top/archives/ea3d181f.html</id>
+    <link href="https://loye168.github.io/archives/ea3d181f.html"/>
+    <id>https://loye168.github.io/archives/ea3d181f.html</id>
     <published>2020-01-22T11:30:00.000Z</published>
     <updated>2020-01-22T12:27:26.297Z</updated>
     
@@ -333,23 +333,23 @@
     </summary>
     
     
-      <category term="Python" scheme="https://tding.top/categories/Python/"/>
+      <category term="Python" scheme="https://loye168.github.io/categories/Python/"/>
     
-      <category term="数据可视化" scheme="https://tding.top/categories/Python/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="https://loye168.github.io/categories/Python/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
     
-      <category term="Python" scheme="https://tding.top/tags/Python/"/>
+      <category term="Python" scheme="https://loye168.github.io/tags/Python/"/>
     
-      <category term="matplotlib" scheme="https://tding.top/tags/matplotlib/"/>
+      <category term="matplotlib" scheme="https://loye168.github.io/tags/matplotlib/"/>
     
-      <category term="数据可视化" scheme="https://tding.top/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="https://loye168.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>Win7开机蓝屏报出STOP 0X0000007B错误的解决办法</title>
-    <link href="https://tding.top/archives/9f1322c6.html"/>
-    <id>https://tding.top/archives/9f1322c6.html</id>
+    <link href="https://loye168.github.io/archives/9f1322c6.html"/>
+    <id>https://loye168.github.io/archives/9f1322c6.html</id>
     <published>2020-01-21T14:30:00.000Z</published>
     <updated>2020-02-06T03:13:32.279Z</updated>
     
@@ -367,19 +367,19 @@
     </summary>
     
     
-      <category term="工具使用" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具使用" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-      <category term="Windows" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Windows/"/>
+      <category term="Windows" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Windows/"/>
     
     
-      <category term="Windows" scheme="https://tding.top/tags/Windows/"/>
+      <category term="Windows" scheme="https://loye168.github.io/tags/Windows/"/>
     
   </entry>
   
   <entry>
     <title>思源宋体与思源黑体</title>
-    <link href="https://tding.top/archives/160f8560.html"/>
-    <id>https://tding.top/archives/160f8560.html</id>
+    <link href="https://loye168.github.io/archives/160f8560.html"/>
+    <id>https://loye168.github.io/archives/160f8560.html</id>
     <published>2020-01-12T15:00:15.000Z</published>
     <updated>2020-01-12T15:06:59.011Z</updated>
     
@@ -391,26 +391,26 @@
 &lt;/ul&gt;
 &lt;p&gt;思源系列字体支持四种不同的东亚语言（简体中文、繁体中文、日语和朝鲜语），7种粗细类型中的每一种都有 65535 个字形，可共同呈现一致的视觉美感。该字体还包含多个西方字形，支持拉丁语、希腊语和西里尔文脚本，这些字形均来源于&lt;code&gt;Source Serif&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;思源系列字体是&lt;strong&gt;迄今为止唯一一款可以免费用于任何场合的“泛中日韩”字体&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;注：关于衬线、非衬线的介绍见&lt;a href=&quot;https://tding.top/archives/7026a363.html&quot;&gt;衬线（Serif）与非衬线（Sans-serif）字体&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;注：关于衬线、非衬线的介绍见&lt;a href=&quot;https://loye168.github.io/archives/7026a363.html&quot;&gt;衬线（Serif）与非衬线（Sans-serif）字体&lt;/a&gt;。&lt;/p&gt;
     
     </summary>
     
     
-      <category term="前端" scheme="https://tding.top/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://loye168.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="CSS" scheme="https://tding.top/categories/%E5%89%8D%E7%AB%AF/CSS/"/>
+      <category term="CSS" scheme="https://loye168.github.io/categories/%E5%89%8D%E7%AB%AF/CSS/"/>
     
     
-      <category term="前端" scheme="https://tding.top/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://loye168.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="字体" scheme="https://tding.top/tags/%E5%AD%97%E4%BD%93/"/>
+      <category term="字体" scheme="https://loye168.github.io/tags/%E5%AD%97%E4%BD%93/"/>
     
   </entry>
   
   <entry>
     <title>衬线（Serif）与非衬线（Sans-serif）字体</title>
-    <link href="https://tding.top/archives/7026a363.html"/>
-    <id>https://tding.top/archives/7026a363.html</id>
+    <link href="https://loye168.github.io/archives/7026a363.html"/>
+    <id>https://loye168.github.io/archives/7026a363.html</id>
     <published>2020-01-12T14:00:15.000Z</published>
     <updated>2020-01-12T15:03:46.278Z</updated>
     
@@ -429,21 +429,21 @@
     </summary>
     
     
-      <category term="前端" scheme="https://tding.top/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://loye168.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="CSS" scheme="https://tding.top/categories/%E5%89%8D%E7%AB%AF/CSS/"/>
+      <category term="CSS" scheme="https://loye168.github.io/categories/%E5%89%8D%E7%AB%AF/CSS/"/>
     
     
-      <category term="前端" scheme="https://tding.top/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://loye168.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="字体" scheme="https://tding.top/tags/%E5%AD%97%E4%BD%93/"/>
+      <category term="字体" scheme="https://loye168.github.io/tags/%E5%AD%97%E4%BD%93/"/>
     
   </entry>
   
   <entry>
     <title>Word插入矢量图</title>
-    <link href="https://tding.top/archives/7a65918e.html"/>
-    <id>https://tding.top/archives/7a65918e.html</id>
+    <link href="https://loye168.github.io/archives/7a65918e.html"/>
+    <id>https://loye168.github.io/archives/7a65918e.html</id>
     <published>2020-01-12T13:00:00.000Z</published>
     <updated>2020-01-12T15:03:46.254Z</updated>
     
@@ -454,21 +454,21 @@
     </summary>
     
     
-      <category term="工具使用" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具使用" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-      <category term="软件" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Word" scheme="https://tding.top/tags/Word/"/>
+      <category term="Word" scheme="https://loye168.github.io/tags/Word/"/>
     
-      <category term="矢量图" scheme="https://tding.top/tags/%E7%9F%A2%E9%87%8F%E5%9B%BE/"/>
+      <category term="矢量图" scheme="https://loye168.github.io/tags/%E7%9F%A2%E9%87%8F%E5%9B%BE/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-NexT版本更新记录</title>
-    <link href="https://tding.top/archives/2bd6d82.html"/>
-    <id>https://tding.top/archives/2bd6d82.html</id>
+    <link href="https://loye168.github.io/archives/2bd6d82.html"/>
+    <id>https://loye168.github.io/archives/2bd6d82.html</id>
     <published>2020-01-11T15:30:00.000Z</published>
     <updated>2020-03-06T03:38:47.563Z</updated>
     
@@ -484,21 +484,21 @@
     </summary>
     
     
-      <category term="工具使用" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具使用" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-      <category term="Hexo" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://tding.top/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/tags/Hexo/"/>
     
-      <category term="NexT" scheme="https://tding.top/tags/NexT/"/>
+      <category term="NexT" scheme="https://loye168.github.io/tags/NexT/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-NexT新增友链</title>
-    <link href="https://tding.top/archives/73ce4e7.html"/>
-    <id>https://tding.top/archives/73ce4e7.html</id>
+    <link href="https://loye168.github.io/archives/73ce4e7.html"/>
+    <id>https://loye168.github.io/archives/73ce4e7.html</id>
     <published>2020-01-10T15:30:00.000Z</published>
     <updated>2020-02-12T06:06:59.532Z</updated>
     
@@ -507,27 +507,27 @@
       &lt;p&gt;NexT主题自带的友链模块放在侧边栏下面，视觉上比较臃肿。&lt;/p&gt;
 &lt;p&gt;本文介绍两种修改友链样式的方法以及具体的步骤。其中第一种方法需要修改 NexT 主题文件，第二种则不需要。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;本博客的友链见：&lt;a href=&quot;https://tding.top/about/links.html&quot;&gt;友链&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;本博客的友链见：&lt;a href=&quot;https://loye168.github.io/about/links.html&quot;&gt;友链&lt;/a&gt;。&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
     
     
-      <category term="工具使用" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具使用" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-      <category term="Hexo" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://tding.top/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/tags/Hexo/"/>
     
-      <category term="NexT" scheme="https://tding.top/tags/NexT/"/>
+      <category term="NexT" scheme="https://loye168.github.io/tags/NexT/"/>
     
   </entry>
   
   <entry>
     <title>本博客当前使用的插件总结</title>
-    <link href="https://tding.top/archives/567debe0.html"/>
-    <id>https://tding.top/archives/567debe0.html</id>
+    <link href="https://loye168.github.io/archives/567debe0.html"/>
+    <id>https://loye168.github.io/archives/567debe0.html</id>
     <published>2020-01-10T15:10:00.000Z</published>
     <updated>2020-01-13T06:15:10.841Z</updated>
     
@@ -650,23 +650,23 @@
     </summary>
     
     
-      <category term="工具使用" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具使用" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-      <category term="Hexo" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://tding.top/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/tags/Hexo/"/>
     
-      <category term="NexT" scheme="https://tding.top/tags/NexT/"/>
+      <category term="NexT" scheme="https://loye168.github.io/tags/NexT/"/>
     
-      <category term="插件" scheme="https://tding.top/tags/%E6%8F%92%E4%BB%B6/"/>
+      <category term="插件" scheme="https://loye168.github.io/tags/%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-NexT加载性能优化</title>
-    <link href="https://tding.top/archives/7e5b094d.html"/>
-    <id>https://tding.top/archives/7e5b094d.html</id>
+    <link href="https://loye168.github.io/archives/7e5b094d.html"/>
+    <id>https://loye168.github.io/archives/7e5b094d.html</id>
     <published>2020-01-04T08:30:00.000Z</published>
     <updated>2020-01-04T08:42:18.347Z</updated>
     
@@ -678,24 +678,24 @@
 &lt;/ul&gt;
 &lt;p&gt;注意：本文主要关注加载速度优化，不考虑因为网络问题导致的访问慢问题，由于国内访问GitHub Pages速度不佳，我们可以将博客部署到国内的VPS、Coding Pages，或者采用CDN加速，具体可以参考：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://tding.top/archives/12a4e7e6.html&quot;&gt;Hexo 博客部署到 VPS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://tding.top/archives/e09249d2.html&quot;&gt;Hexo 博客部署到 Coding&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://tding.top/archives/12c6c559.html&quot;&gt;Hexo 配置 Cloudflare 免费 CDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loye168.github.io/archives/12a4e7e6.html&quot;&gt;Hexo 博客部署到 VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loye168.github.io/archives/e09249d2.html&quot;&gt;Hexo 博客部署到 Coding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loye168.github.io/archives/12c6c559.html&quot;&gt;Hexo 配置 Cloudflare 免费 CDN&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
     
     
-      <category term="工具使用" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具使用" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-      <category term="Hexo" scheme="https://tding.top/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://tding.top/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://loye168.github.io/tags/Hexo/"/>
     
-      <category term="NexT" scheme="https://tding.top/tags/NexT/"/>
+      <category term="NexT" scheme="https://loye168.github.io/tags/NexT/"/>
     
-      <category term="性能优化" scheme="https://tding.top/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+      <category term="性能优化" scheme="https://loye168.github.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
