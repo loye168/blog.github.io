@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>code004&#39;s Blog</title>
+  
+  <subtitle>Think Twice Code Once</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://code004.ml/"/>
+  <updated>2020-06-25T15:11:38.777Z</updated>
+  <id>https://code004.ml/</id>
+  
+  <author>
+    <name>code004</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fuck XHC</title>
+    <link href="https://code004.ml/posts/fuck-xhc/"/>
+    <id>https://code004.ml/posts/fuck-xhc/</id>
+    <published>2020-06-25T15:11:03.887Z</published>
+    <updated>2020-06-25T15:11:38.777Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="FUCK-XHC"><a href="#FUCK-XHC" class="headerlink" title="FUCK XHC!"></a>FUCK XHC!</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;FUCK-XHC&quot;&gt;&lt;a href=&quot;#FUCK-XHC&quot; class=&quot;headerlink&quot; title=&quot;FUCK XHC!&quot;&gt;&lt;/a&gt;FUCK XHC!&lt;/h1&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
