@@ -18654,7 +18654,7 @@
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">        &#123;% elif page.type <span class="comment">=== 'schedule' %&#125;</span></span><br><span class="line">          &#123;% include 'schedule.swig' %&#125;</span><br><span class="line"><span class="addition">+       &#123;% elif page.type === 'links' %&#125;</span></span><br><span class="line"><span class="addition">+         &#123;% include 'links.swig' %&#125;</span></span><br><span class="line">        &#123;% else %&#125;</span><br><span class="line">          &#123;&#123; page.content &#125;&#125;</span><br><span class="line">        &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="修改主题配置文件-config-yml"><a href="#修改主题配置文件-config-yml" class="headerlink" title="修改主题配置文件_config.yml"></a>修改主题配置文件<code>_config.yml</code></h3><p>在主题配置文件<code>themes/_config.yml</code>末尾处添加友链：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">mylinks:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">nickname:</span> <span class="string">小丁的个人博客</span>                           <span class="comment">#友链名称</span></span><br><span class="line">    <span class="attr">avatar:</span> <span class="string">https://tding.top/images/avatar.webp</span>       <span class="comment">#友链头像</span></span><br><span class="line">    <span class="attr">site:</span> <span class="string">https://tding.top</span>                            <span class="comment">#友链地址</span></span><br><span class="line">    <span class="attr">info:</span> <span class="string">世间所有的相遇，都是久别重逢</span>                   <span class="comment">#友链说明</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">mylinks:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">nickname:</span> <span class="string">loye的个人博客</span>                           <span class="comment">#友链名称</span></span><br><span class="line">    <span class="attr">avatar:</span> <span class="string">https://tding.top/images/avatar.webp</span>       <span class="comment">#友链头像</span></span><br><span class="line">    <span class="attr">site:</span> <span class="string">https://tding.top</span>                            <span class="comment">#友链地址</span></span><br><span class="line">    <span class="attr">info:</span> <span class="string">世间所有的相遇，都是久别重逢</span>                   <span class="comment">#友链说明</span></span><br></pre></td></tr></table></figure>
 
 
 <h2 id="第二种友链样式——瀑布流友链实现"><a href="#第二种友链样式——瀑布流友链实现" class="headerlink" title="第二种友链样式——瀑布流友链实现"></a>第二种友链样式——瀑布流友链实现</h2><p>基本原理：新建md页面，渲染出一个html页面，其中包含一个class是<code>.link-navigation</code>的网页元素。同时加载<code>links.js</code>，下载json文件，渲染到这个网页元素中。</p>
@@ -18665,7 +18665,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page links</span><br></pre></td></tr></table></figure>
 
 <p>这样会在 <code>/source/</code> 下创建 <code>links/index.md</code>。在文档的 <code>front matter</code> 添加 <code>type: links</code>，编辑好自己需要的友链页面内容，然后输入放置友链的 html 元素。示例：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 友链</span><br><span class="line">type: links</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span>.links-content&#123;margin-top:1rem&#125;.link-navigation::after&#123;content:" ";display:block;clear:both&#125;.card&#123;width:130px;font-size:1rem;padding:0;border-radius:4px;transition-duration:.15s;margin-bottom:1rem;display:block;float:left;box-shadow:0 2px 6px 0 rgba(0,0,0,.12);background:#f5f5f5&#125;.card&#123;margin-left:16px&#125;@media(max-width:567px)&#123;.card&#123;margin-left:16px;width:calc((100% - 16px)/2)&#125;.card:nth-child(2n+1)&#123;margin-left:0&#125;.card:not(:nth-child(2n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:567px)&#123;.card&#123;margin-left:16px;width:calc((100% - 32px)/3)&#125;.card:nth-child(3n+1)&#123;margin-left:0&#125;.card:not(:nth-child(3n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:768px)&#123;.card&#123;margin-left:16px;width:calc((100% - 48px)/4)&#125;.card:nth-child(4n+1)&#123;margin-left:0&#125;.card:not(:nth-child(4n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:1200px)&#123;.card&#123;margin-left:16px;width:calc((100% - 64px)/5)&#125;.card:nth-child(5n+1)&#123;margin-left:0&#125;.card:not(:nth-child(5n+1))&#123;margin-left:16px&#125;&#125;.card:hover&#123;transform:scale(1.1);box-shadow:0 2px 6px 0 rgba(0,0,0,.12),0 0 6px 0 rgba(0,0,0,.04)&#125;.card .thumb&#123;width:100%;height:0;padding-bottom:100%;background-size:100% 100%!important&#125;.posts-expand .post-body img&#123;margin:0;padding:0;border:0&#125;.card .card-header&#123;display:block;text-align:center;padding:1rem .25rem;font-weight:500;color:#333;white-space:normal&#125;.card .card-header a&#123;font-style:normal;color:#2bbc8a;font-weight:700;text-decoration:none;border:0&#125;.card .card-header a:hover&#123;color:#d480aa;text-decoration:none;border:0&#125;<span class="tag">&lt;/<span class="name">style</span>&gt;</span><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"links-content"</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"link-navigation"</span> <span class="attr">id</span>=<span class="string">"links1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"with-love"</span> <span class="attr">id</span>=<span class="string">"animate1"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span>留言添加友链<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"with-love"</span> <span class="attr">id</span>=<span class="string">"animate2"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line"></span><br><span class="line">## 友链格式</span><br><span class="line"></span><br><span class="line">- 网站名称：小丁的个人博客</span><br><span class="line">- 网站地址：[https://tding.top](https://tding.top)</span><br><span class="line">- 网站描述：世间所有的相遇，都是久别重逢</span><br><span class="line">- 网站Logo/头像：[https://tding.top/images/avatar.webp](https://tding.top/images/avatar.webp)</span><br><span class="line"></span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 友链</span><br><span class="line">type: links</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span>.links-content&#123;margin-top:1rem&#125;.link-navigation::after&#123;content:" ";display:block;clear:both&#125;.card&#123;width:130px;font-size:1rem;padding:0;border-radius:4px;transition-duration:.15s;margin-bottom:1rem;display:block;float:left;box-shadow:0 2px 6px 0 rgba(0,0,0,.12);background:#f5f5f5&#125;.card&#123;margin-left:16px&#125;@media(max-width:567px)&#123;.card&#123;margin-left:16px;width:calc((100% - 16px)/2)&#125;.card:nth-child(2n+1)&#123;margin-left:0&#125;.card:not(:nth-child(2n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:567px)&#123;.card&#123;margin-left:16px;width:calc((100% - 32px)/3)&#125;.card:nth-child(3n+1)&#123;margin-left:0&#125;.card:not(:nth-child(3n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:768px)&#123;.card&#123;margin-left:16px;width:calc((100% - 48px)/4)&#125;.card:nth-child(4n+1)&#123;margin-left:0&#125;.card:not(:nth-child(4n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:1200px)&#123;.card&#123;margin-left:16px;width:calc((100% - 64px)/5)&#125;.card:nth-child(5n+1)&#123;margin-left:0&#125;.card:not(:nth-child(5n+1))&#123;margin-left:16px&#125;&#125;.card:hover&#123;transform:scale(1.1);box-shadow:0 2px 6px 0 rgba(0,0,0,.12),0 0 6px 0 rgba(0,0,0,.04)&#125;.card .thumb&#123;width:100%;height:0;padding-bottom:100%;background-size:100% 100%!important&#125;.posts-expand .post-body img&#123;margin:0;padding:0;border:0&#125;.card .card-header&#123;display:block;text-align:center;padding:1rem .25rem;font-weight:500;color:#333;white-space:normal&#125;.card .card-header a&#123;font-style:normal;color:#2bbc8a;font-weight:700;text-decoration:none;border:0&#125;.card .card-header a:hover&#123;color:#d480aa;text-decoration:none;border:0&#125;<span class="tag">&lt;/<span class="name">style</span>&gt;</span><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"links-content"</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"link-navigation"</span> <span class="attr">id</span>=<span class="string">"links1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"with-love"</span> <span class="attr">id</span>=<span class="string">"animate1"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span>留言添加友链<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"with-love"</span> <span class="attr">id</span>=<span class="string">"animate2"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line"></span><br><span class="line">## 友链格式</span><br><span class="line"></span><br><span class="line">- 网站名称：loye的个人博客</span><br><span class="line">- 网站地址：[https://tding.top](https://tding.top)</span><br><span class="line">- 网站描述：世间所有的相遇，都是久别重逢</span><br><span class="line">- 网站Logo/头像：[https://tding.top/images/avatar.webp](https://tding.top/images/avatar.webp)</span><br><span class="line"></span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="侧边栏添加友链页面链接"><a href="#侧边栏添加友链页面链接" class="headerlink" title="侧边栏添加友链页面链接"></a>侧边栏添加友链页面链接</h3><p>主题配置文件<code>_config.yml</code>中添加：</p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  tags: /tags/ || tags  </span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line"><span class="addition">+  links: /links || link</span></span><br></pre></td></tr></table></figure>
@@ -22247,10 +22247,10 @@
 <h3 id="“-”"><a href="#“-”" class="headerlink" title="“-”"></a>“-”</h3><p>如果我们只想看到<code>program</code>的内容，而不希望看到<code>google</code>的内容，就可以把<code>-</code>（减号或者破折号）应用到搜索当中去，语法为<code>program -google</code>。</p>
 <p>注意：<code>-</code>之前是有一个空格的，而其后却是和下一个关键词是紧紧相连的！可以看得到结果中都会包含<code>program</code>，而不包含<code>google</code>。</p>
 <h2 id="高级语法"><a href="#高级语法" class="headerlink" title="高级语法"></a>高级语法</h2><h3 id="intitle"><a href="#intitle" class="headerlink" title="intitle"></a>intitle</h3><p>这个语法的作用是<strong>将搜索的范围局限在标题上</strong>。在关键词前面加上这个，就会只对网页的标题进行搜索并且配对，最后将结果返回给用户。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">intitle:小丁</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">intitle:loye</span><br></pre></td></tr></table></figure>
 
 <h3 id="intext"><a href="#intext" class="headerlink" title="intext"></a>intext</h3><p>这个语法是用来搜索<strong>网页正文内容</strong>的，这样就可以忽略网页中的超文本链接、URL和题目。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">intext:小丁</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">intext:loye</span><br></pre></td></tr></table></figure>
 
 <h3 id="inanchor"><a href="#inanchor" class="headerlink" title="inanchor"></a>inanchor</h3><p>这个语法的意思是在页面的链接锚点进行搜索。</p>
 <blockquote>
@@ -25014,7 +25014,7 @@
 </thead>
 <tbody><tr>
 <td>SITE_NAME</td>
-<td>小丁的个人博客</td>
+<td>loye的个人博客</td>
 <td><code>[必填]</code>博客名称</td>
 </tr>
 <tr>
@@ -26877,19 +26877,19 @@
 <h4 id="自定义子页面"><a href="#自定义子页面" class="headerlink" title="自定义子页面"></a>自定义子页面</h4><p>NexT主题自带的子页面很少，只有首页、标签、分类、归档、关于等子页面。为了记录更多的内容，我添加了<strong>豆瓣读书、豆瓣电影、画廊、热榜</strong>等子页面，具体过程以及效果见下面：</p>
 <ul>
 <li><a href="https://tding.top/archives/c7ba3a41.html">Hexo加入豆瓣读书页面</a><ul>
-<li>具体效果见：<a href="https://tding.top/books/">小丁的个人博客-豆瓣电影</a></li>
+<li>具体效果见：<a href="https://tding.top/books/">loye的个人博客-豆瓣电影</a></li>
 </ul>
 </li>
 <li><a href="https://tding.top/archives/607c3b85.html">Hexo-NexT实现相册</a><ul>
-<li>具体效果见：<a href="https://tding.top/gallery/">小丁的个人博客-画廊</a></li>
+<li>具体效果见：<a href="https://tding.top/gallery/">loye的个人博客-画廊</a></li>
 </ul>
 </li>
 <li><a href="https://tding.top/archives/baf1ffd.html">Hexo-NexT新增阅读排行页面</a><ul>
-<li>具体效果见：<a href="https://tding.top/top/">小丁的个人博客-热榜</a></li>
+<li>具体效果见：<a href="https://tding.top/top/">loye的个人博客-热榜</a></li>
 </ul>
 </li>
 <li><a href="https://tding.top/archives/73ce4e7.html">Hexo-NexT新增友链</a><ul>
-<li>具体效果见：<a href="https://tding.top/about/links.html">小丁的个人博客-友链</a></li>
+<li>具体效果见：<a href="https://tding.top/about/links.html">loye的个人博客-友链</a></li>
 </ul>
 </li>
 </ul>
@@ -26933,7 +26933,7 @@
 <li><a href="https://tding.top/archives/9a232bbe.html">Hexo-Yilia进阶笔记</a></li>
 </ul>
 <blockquote>
-<p>我的个人博客地址：<a href="https://tding.top/">小丁的个人博客</a></p>
+<p>我的个人博客地址：<a href="https://tding.top/">loye的个人博客</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -27936,17 +27936,17 @@
 </ul>
 <p>注意：最好添加<code>&lt;div&gt;</code>标签，测试时没加 div，下面显示不完全，加上非常美观。</p>
 <p>一个示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;&#123;% button https:&#x2F;&#x2F;tding.top&#x2F; ,首页,home fa-fw,这是小丁的个人博客首页%&#125;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;&#123;% button https:&#x2F;&#x2F;tding.top&#x2F; ,首页,home fa-fw,这是loye的个人博客首页%&#125;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
 
 <p>显示效果：</p>
-<div><a class="btn" href="https://tding.top/ " title="这是小丁的个人博客首页">
+<div><a class="btn" href="https://tding.top/ " title="这是loye的个人博客首页">
             <i class="fa fa-home fa-fw"></i>首页
           </a></div>
 
 <p>多个按钮居中显示：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;text-center&quot;&gt;&lt;div&gt;&#123;% button https:&#x2F;&#x2F;tding.top&#x2F; ,首页,home fa-fw,这是小丁的个人博客首页%&#125; &#123;% button https:&#x2F;&#x2F;tding.top&#x2F;movies&#x2F; ,观影,film fa-fw,豆瓣电影%&#125; &#123;% button https:&#x2F;&#x2F;tding.top&#x2F;books&#x2F; ,阅读,book fa-fw,豆瓣读书%&#125;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;text-center&quot;&gt;&lt;div&gt;&#123;% button https:&#x2F;&#x2F;tding.top&#x2F; ,首页,home fa-fw,这是loye的个人博客首页%&#125; &#123;% button https:&#x2F;&#x2F;tding.top&#x2F;movies&#x2F; ,观影,film fa-fw,豆瓣电影%&#125; &#123;% button https:&#x2F;&#x2F;tding.top&#x2F;books&#x2F; ,阅读,book fa-fw,豆瓣读书%&#125;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
 
-<div class="text-center"><div><a class="btn" href="https://tding.top/ " title="这是小丁的个人博客首页">
+<div class="text-center"><div><a class="btn" href="https://tding.top/ " title="这是loye的个人博客首页">
             <i class="fa fa-home fa-fw"></i>首页
           </a> <a class="btn" href="https://tding.top/movies/ " title="豆瓣电影">
             <i class="fa fa-film fa-fw"></i>观影

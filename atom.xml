@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>小丁的个人博客</title>
+  <title>loye的个人博客</title>
   <icon>https://tding.top/icon.png</icon>
   <subtitle>世间所有的相遇，都是久别重逢</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://tding.top/</id>
   
   <author>
-    <name>小丁</name>
+    <name>loye</name>
     
   </author>
   
