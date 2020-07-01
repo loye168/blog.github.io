@@ -18175,7 +18175,7 @@
   <entry>
     <title>Matplotlib系列之画布与坐标轴设置</title>
     <url>/archives/21d3feb6.html</url>
-    <content><![CDATA[<p>通过<a href="https://tding.top/archives/ea3d181f.html">Matplotlib系列之简述</a>这篇文章，我们已经从宏观上大致了解了Matplotlib图像的组成部分。今天，我们主要介绍画布与坐标轴这两个概念，并详细介绍一下坐标轴属性设置以及脊柱设置。</p>
+    <content><![CDATA[<p>通过<a href="https://loye168.github.io/archives/ea3d181f.html">Matplotlib系列之简述</a>这篇文章，我们已经从宏观上大致了解了Matplotlib图像的组成部分。今天，我们主要介绍画布与坐标轴这两个概念，并详细介绍一下坐标轴属性设置以及脊柱设置。</p>
 <a id="more"></a>
 
 <h2 id="画布与坐标轴对象"><a href="#画布与坐标轴对象" class="headerlink" title="画布与坐标轴对象"></a>画布与坐标轴对象</h2><p>我们可以使用<code>plt.figure()</code>创建一个Figure对象，然后在这个画布对象上进行绘图，因此我们需要再创建一个坐标轴对象，这里可以调用Figure实例的<code>add_axes()</code>方法：</p>
@@ -18362,7 +18362,7 @@
 </ul>
 <p>思源系列字体支持四种不同的东亚语言（简体中文、繁体中文、日语和朝鲜语），7种粗细类型中的每一种都有 65535 个字形，可共同呈现一致的视觉美感。该字体还包含多个西方字形，支持拉丁语、希腊语和西里尔文脚本，这些字形均来源于<code>Source Serif</code>。</p>
 <p>思源系列字体是<strong>迄今为止唯一一款可以免费用于任何场合的“泛中日韩”字体</strong>。</p>
-<p>注：关于衬线、非衬线的介绍见<a href="https://tding.top/archives/7026a363.html">衬线（Serif）与非衬线（Sans-serif）字体</a>。</p>
+<p>注：关于衬线、非衬线的介绍见<a href="https://loye168.github.io/archives/7026a363.html">衬线（Serif）与非衬线（Sans-serif）字体</a>。</p>
 <a id="more"></a>
 
 <h2 id="思源字体的名称"><a href="#思源字体的名称" class="headerlink" title="思源字体的名称"></a>思源字体的名称</h2><p>由于思源字体由 Google 和 Adobe 联合开发并发行，虽说中文名称相同，但是并没有统一的英文名称。</p>
@@ -18523,7 +18523,7 @@
 <h2 id="为什么要更新？"><a href="#为什么要更新？" class="headerlink" title="为什么要更新？"></a>为什么要更新？</h2><p>当时选择NexT主题就是看中它的维护者多、用户量大，基本一个月左右的时间就会有一个版本更新，直接跟着官方就可以用到最新的特性。</p>
 <p>但由于我之前对NexT主题做了不少自定义修改，这也使得更新主题变得比较麻烦，没有办法通过<code>git pull</code>平滑更新，这也违背了我选择NexT主题的初衷。同时，现在可以通过数据文件（Data File）将配置与主题分离，同时也可以把自定义布局、样式放到数据文件中，不用再修改主题源码，便于后续主题更新。</p>
 <p>因此，为了以后可以方便的更新，我准备花点时间把NexT升级一下。</p>
-<h2 id="插件更新"><a href="#插件更新" class="headerlink" title="插件更新"></a>插件更新</h2><p>插件更新见：<a href="https://tding.top/archives/567debe0.html">本博客当前使用的插件总结</a></p>
+<h2 id="插件更新"><a href="#插件更新" class="headerlink" title="插件更新"></a>插件更新</h2><p>插件更新见：<a href="https://loye168.github.io/archives/567debe0.html">本博客当前使用的插件总结</a></p>
 <h2 id="数据文件"><a href="#数据文件" class="headerlink" title="数据文件"></a>数据文件</h2><p>自从NexT-7.3.0开始，官方推荐采用数据文件将配置与主题分离，这样我们可以在不修改主题源码的同时完成选项配置、自定义布局、自定义样式，便于后续NexT版本更新。</p>
 <h3 id="next-yml"><a href="#next-yml" class="headerlink" title="next.yml"></a><code>next.yml</code></h3><p>我们可以将所有主题配置放在一个位置（<code>hexo/source/_data/next.yml</code>）。这样就无需编辑主题配置文件（<code>next/_config.yml</code>）。</p>
 <p>具体步骤：</p>
@@ -18534,7 +18534,7 @@
 </ol>
 <p>然后我们只需要根据自己的需求配置<code>next.yml</code>即可。</p>
 <ul>
-<li>数据文件的介绍详见：<a href="https://tding.top/docs/getting-started/data-files.html">NexT中文文档-快速入门-数据文件</a></li>
+<li>数据文件的介绍详见：<a href="https://loye168.github.io/docs/getting-started/data-files.html">NexT中文文档-快速入门-数据文件</a></li>
 </ul>
 <h3 id="languages-yml"><a href="#languages-yml" class="headerlink" title="languages.yml"></a><code>languages.yml</code></h3><p>我们原来是通过配置主题下的<code>languages</code>目录中的<code>zh-CN.yml</code>文件来对菜单等进行中文翻译的，现在我们可以通过在<code>hexo/source/_data/</code>下新建数据文件<code>languages.yml</code>，配置如下：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">zh-CN:</span> </span><br><span class="line">  <span class="attr">menu:</span></span><br><span class="line">    <span class="attr">home:</span> <span class="string">首页</span></span><br><span class="line">    <span class="attr">top:</span> <span class="string">热榜</span></span><br><span class="line">    <span class="attr">archives:</span> <span class="string">归档</span></span><br><span class="line">    <span class="attr">categories:</span> <span class="string">分类</span></span><br><span class="line">    <span class="attr">tags:</span> <span class="string">标签</span></span><br><span class="line">    <span class="attr">about:</span> <span class="string">关于</span></span><br><span class="line">    <span class="attr">links:</span> <span class="string">友情链接</span></span><br><span class="line">    <span class="attr">search:</span> <span class="string">搜索</span></span><br><span class="line">    <span class="attr">schedule:</span> <span class="string">日程表</span></span><br><span class="line">    <span class="attr">sitemap:</span> <span class="string">站点地图</span></span><br><span class="line">    <span class="attr">commonweal:</span> <span class="string">公益</span> <span class="number">404</span></span><br><span class="line">    <span class="attr">movies:</span> <span class="string">观影</span></span><br><span class="line">    <span class="attr">books:</span> <span class="string">阅读</span></span><br><span class="line">    <span class="attr">gallery:</span> <span class="string">画廊</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">reward:</span></span><br><span class="line">    <span class="attr">donate:</span> <span class="string">&lt;i</span> <span class="string">class="fa</span> <span class="string">fa-qrcode</span> <span class="string">fa-2x"</span> <span class="string">style="line-height:35px;"&gt;&lt;/i&gt;</span></span><br><span class="line">    <span class="attr">wechatpay:</span> <span class="string">微信支付</span></span><br><span class="line">    <span class="attr">alipay:</span> <span class="string">支付宝</span></span><br><span class="line">    <span class="attr">bitcoin:</span> <span class="string">比特币</span></span><br></pre></td></tr></table></figure>
@@ -18558,7 +18558,7 @@
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">// 中文字体</span><br><span class="line">$font-family-monospace    = consolas, Menlo, monospace, $font-family-base;</span><br><span class="line">$font-family-monospace    = get_font_family('codes'), consolas, Menlo, monospace, $font-family-base if get_font_family('codes');</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="body-end-swig"><a href="#body-end-swig" class="headerlink" title="body-end.swig"></a><code>body-end.swig</code></h3><h4 id="打字特效、鼠标点击特效"><a href="#打字特效、鼠标点击特效" class="headerlink" title="打字特效、鼠标点击特效"></a>打字特效、鼠标点击特效</h4><p>之前版本：<a href="https://tding.top/archives/58cff12b.html">Hexo-NexT 添加打字特效、鼠标点击特效</a>中，以下代码是放在<code>hexo/next/_layout/_custom/custom.swig</code>文件中的，现在这部分代码需要放到<code>hexo/source/_data/body-end.swig</code>文件中：</p>
+<h3 id="body-end-swig"><a href="#body-end-swig" class="headerlink" title="body-end.swig"></a><code>body-end.swig</code></h3><h4 id="打字特效、鼠标点击特效"><a href="#打字特效、鼠标点击特效" class="headerlink" title="打字特效、鼠标点击特效"></a>打字特效、鼠标点击特效</h4><p>之前版本：<a href="https://loye168.github.io/archives/58cff12b.html">Hexo-NexT 添加打字特效、鼠标点击特效</a>中，以下代码是放在<code>hexo/next/_layout/_custom/custom.swig</code>文件中的，现在这部分代码需要放到<code>hexo/source/_data/body-end.swig</code>文件中：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;# 鼠标点击特效 #&#125;</span><br><span class="line">&#123;% if theme.cursor_effect == "fireworks" %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">"/js/cursor/fireworks.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">&#123;% elseif theme.cursor_effect == "explosion" %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">canvas</span> <span class="attr">class</span>=<span class="string">"fireworks"</span> <span class="attr">style</span>=<span class="string">"position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"</span> &gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"//cdn.bootcss.com/animejs/2.2.0/anime.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">"/js/cursor/explosion.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">&#123;% elseif theme.cursor_effect == "love" %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">"/js/cursor/love.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">&#123;% elseif theme.cursor_effect == "text" %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">"/js/cursor/text.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;# 打字特效 #&#125;</span><br><span class="line">&#123;% if theme.typing_effect %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/activate-power-mode.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="handlebars"><span class="xml">    POWERMODE.colorful = </span><span class="template-variable">&#123;&#123; theme.typing_effect.colorful &#125;&#125;</span><span class="xml">;</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">    POWERMODE.shake = </span><span class="template-variable">&#123;&#123; theme.typing_effect.shake &#125;&#125;</span><span class="xml">;</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">document</span>.body.addEventListener(<span class="string">'input'</span>, POWERMODE);</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>然后在NexT的配置文件<code>next.yml</code>中取消<code>body-end.swig</code>的注释：</p>
@@ -18569,11 +18569,11 @@
 
 <p>注意：上面所有特效的JS代码文件都放在站点的source目录下（即<code>hexo/source/js/</code>）而不是主题目录下，如果没有js目录，则新建一个。</p>
 <h4 id="友链添加"><a href="#友链添加" class="headerlink" title="友链添加"></a>友链添加</h4><ul>
-<li>详见：<a href="https://tding.top/archives/73ce4e7.html">Hexo-NexT 新增友链</a></li>
+<li>详见：<a href="https://loye168.github.io/archives/73ce4e7.html">Hexo-NexT 新增友链</a></li>
 </ul>
 <p>从第一种友链方式改用第二种友链方式，因为第二种瀑布流友链样式是不用修改NexT主题源文件的。</p>
 <h4 id="代码块折叠"><a href="#代码块折叠" class="headerlink" title="代码块折叠"></a>代码块折叠</h4><ul>
-<li>NexT-7.1.2下的配置方法见：<a href="https://tding.top/archives/bd4d996d.html">Hexo-NexT 代码块折叠</a></li>
+<li>NexT-7.1.2下的配置方法见：<a href="https://loye168.github.io/archives/bd4d996d.html">Hexo-NexT 代码块折叠</a></li>
 </ul>
 <p>而在当前的NexT-7.7.0主题版本下，为了实现代码块折叠，做出如下更改：</p>
 <ol>
@@ -18587,7 +18587,7 @@
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;# 代码压缩 #&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/fold_action.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>代码块折叠的实际效果可以看：<a href="https://tding.top/archives/384ceeb9.html">24 点解题技巧</a></li>
+<li>代码块折叠的实际效果可以看：<a href="https://loye168.github.io/archives/384ceeb9.html">24 点解题技巧</a></li>
 </ul>
 <h3 id="sidebar-swig"><a href="#sidebar-swig" class="headerlink" title="sidebar.swig"></a><code>sidebar.swig</code></h3><h4 id="近期文章"><a href="#近期文章" class="headerlink" title="近期文章"></a>近期文章</h4><p>在之前的版本中（NexT-7.1.2），我们只需要将以下代码贴在<code>next/layout/_macro/sidebar.swig</code>中的<code>if theme.links</code>对应的<code>endif</code>后面：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.recent_posts %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"links-of-blogroll motion-element &#123;&#123; "</span><span class="attr">links-of-blogroll-</span>" + <span class="attr">theme.recent_posts_layout</span>  &#125;&#125;"&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"links-of-blogroll-title"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- modify icon to fire by szw --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-history fa-&#123;&#123; theme.recent_posts_icon | lower &#125;&#125;"</span> <span class="attr">aria-hidden</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        &#123;&#123; theme.recent_posts_title &#125;&#125;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"links-of-blogroll-list"</span>&gt;</span></span><br><span class="line">        &#123;% set posts = site.posts.sort('-date') %&#125;</span><br><span class="line">        &#123;% for post in posts.slice('0', '5') %&#125;</span><br><span class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; url_for(post.path) &#125;&#125;"</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; post.title &#125;&#125;"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>&#123;&#123; post.title &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
@@ -18603,9 +18603,9 @@
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line"></span><br><span class="line"><span class="deletion">-  #sidebar: source/_data/sidebar.swig</span></span><br><span class="line"><span class="addition">+  sidebar: source/_data/sidebar.swig</span></span><br></pre></td></tr></table></figure>
 
 
-<h4 id="粒子时钟特效"><a href="#粒子时钟特效" class="headerlink" title="粒子时钟特效"></a>粒子时钟特效</h4><p>之前版本设置方法见：<a href="https://tding.top/archives/dd68b70.html">Hexo-NexT 增加 canvas 粒子时钟</a></p>
+<h4 id="粒子时钟特效"><a href="#粒子时钟特效" class="headerlink" title="粒子时钟特效"></a>粒子时钟特效</h4><p>之前版本设置方法见：<a href="https://loye168.github.io/archives/dd68b70.html">Hexo-NexT 增加 canvas 粒子时钟</a></p>
 <p>现在我们只需要把粒子时钟的js代码直接放入到<code>hexo/source/_data/sidebar.swig</code>文件即可。</p>
-<h3 id="post-meta-swig"><a href="#post-meta-swig" class="headerlink" title="post-meta.swig"></a><code>post-meta.swig</code></h3><h4 id="置顶文章标志"><a href="#置顶文章标志" class="headerlink" title="置顶文章标志"></a>置顶文章标志</h4><p>首先我们需要安装<code>hexo-generator-index-pin-top</code>这个插件，具体过程详见：<a href="https://tding.top/archives/567debe0.html">本博客当前使用的插件总结</a>。</p>
+<h3 id="post-meta-swig"><a href="#post-meta-swig" class="headerlink" title="post-meta.swig"></a><code>post-meta.swig</code></h3><h4 id="置顶文章标志"><a href="#置顶文章标志" class="headerlink" title="置顶文章标志"></a>置顶文章标志</h4><p>首先我们需要安装<code>hexo-generator-index-pin-top</code>这个插件，具体过程详见：<a href="https://loye168.github.io/archives/567debe0.html">本博客当前使用的插件总结</a>。</p>
 <p>然后将以下代码放入<code>hexo/source/_data/post-meta.swig</code>文件</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-meta-divider"</span>&gt;</span>|<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-thumb-tack"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">7D26CD</span>&gt;</span>置顶<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-meta-divider"</span>&gt;</span>|<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
@@ -18613,7 +18613,7 @@
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line"></span><br><span class="line"><span class="deletion">-  #post-meta: source/_data/post-meta.swig</span></span><br><span class="line"><span class="addition">+  post-meta: source/_data/post-meta.swig</span></span><br></pre></td></tr></table></figure>
 
 
-<h3 id="footer-swig"><a href="#footer-swig" class="headerlink" title="footer.swig"></a><code>footer.swig</code></h3><h4 id="简体-繁体一键切换"><a href="#简体-繁体一键切换" class="headerlink" title="简体/繁体一键切换"></a>简体/繁体一键切换</h4><p>之前版本设置方法见：<a href="https://tding.top/archives/3cdfe265.html">Hexo-NexT 支持简体繁体一键切换</a></p>
+<h3 id="footer-swig"><a href="#footer-swig" class="headerlink" title="footer.swig"></a><code>footer.swig</code></h3><h4 id="简体-繁体一键切换"><a href="#简体-繁体一键切换" class="headerlink" title="简体/繁体一键切换"></a>简体/繁体一键切换</h4><p>之前版本设置方法见：<a href="https://loye168.github.io/archives/3cdfe265.html">Hexo-NexT 支持简体繁体一键切换</a></p>
 <p>现在我们只需要把<strong>显示简繁转换按钮</strong>的swig代码直接放入到<code>hexo/source/_data/footer.swig</code>文件即可。</p>
 <p>注意：简体/繁体一键切换的JS代码文件放在站点的source目录下（即<code>hexo/source/js/</code>）而不是主题目录下，如果没有js目录，则新建一个。</p>
 <p>至此，主题升级完成。</p>
@@ -18637,7 +18637,7 @@
     <content><![CDATA[<p>NexT主题自带的友链模块放在侧边栏下面，视觉上比较臃肿。</p>
 <p>本文介绍两种修改友链样式的方法以及具体的步骤。其中第一种方法需要修改 NexT 主题文件，第二种则不需要。</p>
 <ul>
-<li>本博客的友链见：<a href="https://tding.top/about/links.html">友链</a>。</li>
+<li>本博客的友链见：<a href="https://loye168.github.io/about/links.html">友链</a>。</li>
 </ul>
 <a id="more"></a>
 
@@ -18654,7 +18654,7 @@
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">        &#123;% elif page.type <span class="comment">=== 'schedule' %&#125;</span></span><br><span class="line">          &#123;% include 'schedule.swig' %&#125;</span><br><span class="line"><span class="addition">+       &#123;% elif page.type === 'links' %&#125;</span></span><br><span class="line"><span class="addition">+         &#123;% include 'links.swig' %&#125;</span></span><br><span class="line">        &#123;% else %&#125;</span><br><span class="line">          &#123;&#123; page.content &#125;&#125;</span><br><span class="line">        &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="修改主题配置文件-config-yml"><a href="#修改主题配置文件-config-yml" class="headerlink" title="修改主题配置文件_config.yml"></a>修改主题配置文件<code>_config.yml</code></h3><p>在主题配置文件<code>themes/_config.yml</code>末尾处添加友链：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">mylinks:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">nickname:</span> <span class="string">loye的个人博客</span>                           <span class="comment">#友链名称</span></span><br><span class="line">    <span class="attr">avatar:</span> <span class="string">https://tding.top/images/avatar.webp</span>       <span class="comment">#友链头像</span></span><br><span class="line">    <span class="attr">site:</span> <span class="string">https://tding.top</span>                            <span class="comment">#友链地址</span></span><br><span class="line">    <span class="attr">info:</span> <span class="string">世间所有的相遇，都是久别重逢</span>                   <span class="comment">#友链说明</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">mylinks:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">nickname:</span> <span class="string">loye的个人博客</span>                           <span class="comment">#友链名称</span></span><br><span class="line">    <span class="attr">avatar:</span> <span class="string">https://loye168.github.io/images/avatar.webp</span>       <span class="comment">#友链头像</span></span><br><span class="line">    <span class="attr">site:</span> <span class="string">https://loye168.github.io</span>                            <span class="comment">#友链地址</span></span><br><span class="line">    <span class="attr">info:</span> <span class="string">世间所有的相遇，都是久别重逢</span>                   <span class="comment">#友链说明</span></span><br></pre></td></tr></table></figure>
 
 
 <h2 id="第二种友链样式——瀑布流友链实现"><a href="#第二种友链样式——瀑布流友链实现" class="headerlink" title="第二种友链样式——瀑布流友链实现"></a>第二种友链样式——瀑布流友链实现</h2><p>基本原理：新建md页面，渲染出一个html页面，其中包含一个class是<code>.link-navigation</code>的网页元素。同时加载<code>links.js</code>，下载json文件，渲染到这个网页元素中。</p>
@@ -18665,7 +18665,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page links</span><br></pre></td></tr></table></figure>
 
 <p>这样会在 <code>/source/</code> 下创建 <code>links/index.md</code>。在文档的 <code>front matter</code> 添加 <code>type: links</code>，编辑好自己需要的友链页面内容，然后输入放置友链的 html 元素。示例：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 友链</span><br><span class="line">type: links</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span>.links-content&#123;margin-top:1rem&#125;.link-navigation::after&#123;content:" ";display:block;clear:both&#125;.card&#123;width:130px;font-size:1rem;padding:0;border-radius:4px;transition-duration:.15s;margin-bottom:1rem;display:block;float:left;box-shadow:0 2px 6px 0 rgba(0,0,0,.12);background:#f5f5f5&#125;.card&#123;margin-left:16px&#125;@media(max-width:567px)&#123;.card&#123;margin-left:16px;width:calc((100% - 16px)/2)&#125;.card:nth-child(2n+1)&#123;margin-left:0&#125;.card:not(:nth-child(2n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:567px)&#123;.card&#123;margin-left:16px;width:calc((100% - 32px)/3)&#125;.card:nth-child(3n+1)&#123;margin-left:0&#125;.card:not(:nth-child(3n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:768px)&#123;.card&#123;margin-left:16px;width:calc((100% - 48px)/4)&#125;.card:nth-child(4n+1)&#123;margin-left:0&#125;.card:not(:nth-child(4n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:1200px)&#123;.card&#123;margin-left:16px;width:calc((100% - 64px)/5)&#125;.card:nth-child(5n+1)&#123;margin-left:0&#125;.card:not(:nth-child(5n+1))&#123;margin-left:16px&#125;&#125;.card:hover&#123;transform:scale(1.1);box-shadow:0 2px 6px 0 rgba(0,0,0,.12),0 0 6px 0 rgba(0,0,0,.04)&#125;.card .thumb&#123;width:100%;height:0;padding-bottom:100%;background-size:100% 100%!important&#125;.posts-expand .post-body img&#123;margin:0;padding:0;border:0&#125;.card .card-header&#123;display:block;text-align:center;padding:1rem .25rem;font-weight:500;color:#333;white-space:normal&#125;.card .card-header a&#123;font-style:normal;color:#2bbc8a;font-weight:700;text-decoration:none;border:0&#125;.card .card-header a:hover&#123;color:#d480aa;text-decoration:none;border:0&#125;<span class="tag">&lt;/<span class="name">style</span>&gt;</span><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"links-content"</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"link-navigation"</span> <span class="attr">id</span>=<span class="string">"links1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"with-love"</span> <span class="attr">id</span>=<span class="string">"animate1"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span>留言添加友链<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"with-love"</span> <span class="attr">id</span>=<span class="string">"animate2"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line"></span><br><span class="line">## 友链格式</span><br><span class="line"></span><br><span class="line">- 网站名称：loye的个人博客</span><br><span class="line">- 网站地址：[https://tding.top](https://tding.top)</span><br><span class="line">- 网站描述：世间所有的相遇，都是久别重逢</span><br><span class="line">- 网站Logo/头像：[https://tding.top/images/avatar.webp](https://tding.top/images/avatar.webp)</span><br><span class="line"></span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 友链</span><br><span class="line">type: links</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span>.links-content&#123;margin-top:1rem&#125;.link-navigation::after&#123;content:" ";display:block;clear:both&#125;.card&#123;width:130px;font-size:1rem;padding:0;border-radius:4px;transition-duration:.15s;margin-bottom:1rem;display:block;float:left;box-shadow:0 2px 6px 0 rgba(0,0,0,.12);background:#f5f5f5&#125;.card&#123;margin-left:16px&#125;@media(max-width:567px)&#123;.card&#123;margin-left:16px;width:calc((100% - 16px)/2)&#125;.card:nth-child(2n+1)&#123;margin-left:0&#125;.card:not(:nth-child(2n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:567px)&#123;.card&#123;margin-left:16px;width:calc((100% - 32px)/3)&#125;.card:nth-child(3n+1)&#123;margin-left:0&#125;.card:not(:nth-child(3n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:768px)&#123;.card&#123;margin-left:16px;width:calc((100% - 48px)/4)&#125;.card:nth-child(4n+1)&#123;margin-left:0&#125;.card:not(:nth-child(4n+1))&#123;margin-left:16px&#125;&#125;@media(min-width:1200px)&#123;.card&#123;margin-left:16px;width:calc((100% - 64px)/5)&#125;.card:nth-child(5n+1)&#123;margin-left:0&#125;.card:not(:nth-child(5n+1))&#123;margin-left:16px&#125;&#125;.card:hover&#123;transform:scale(1.1);box-shadow:0 2px 6px 0 rgba(0,0,0,.12),0 0 6px 0 rgba(0,0,0,.04)&#125;.card .thumb&#123;width:100%;height:0;padding-bottom:100%;background-size:100% 100%!important&#125;.posts-expand .post-body img&#123;margin:0;padding:0;border:0&#125;.card .card-header&#123;display:block;text-align:center;padding:1rem .25rem;font-weight:500;color:#333;white-space:normal&#125;.card .card-header a&#123;font-style:normal;color:#2bbc8a;font-weight:700;text-decoration:none;border:0&#125;.card .card-header a:hover&#123;color:#d480aa;text-decoration:none;border:0&#125;<span class="tag">&lt;/<span class="name">style</span>&gt;</span><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"links-content"</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"link-navigation"</span> <span class="attr">id</span>=<span class="string">"links1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"with-love"</span> <span class="attr">id</span>=<span class="string">"animate1"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span>留言添加友链<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"with-love"</span> <span class="attr">id</span>=<span class="string">"animate2"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line"></span><br><span class="line">## 友链格式</span><br><span class="line"></span><br><span class="line">- 网站名称：loye的个人博客</span><br><span class="line">- 网站地址：[https://loye168.github.io](https://loye168.github.io)</span><br><span class="line">- 网站描述：世间所有的相遇，都是久别重逢</span><br><span class="line">- 网站Logo/头像：[https://loye168.github.io/images/avatar.webp](https://loye168.github.io/images/avatar.webp)</span><br><span class="line"></span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="侧边栏添加友链页面链接"><a href="#侧边栏添加友链页面链接" class="headerlink" title="侧边栏添加友链页面链接"></a>侧边栏添加友链页面链接</h3><p>主题配置文件<code>_config.yml</code>中添加：</p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  tags: /tags/ || tags  </span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line"><span class="addition">+  links: /links || link</span></span><br></pre></td></tr></table></figure>
@@ -18833,7 +18833,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
 
 <p>然后我们可以在站点配置文件<code>_config.yml</code>中修改为：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://tding.top/</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">archives/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://loye168.github.io/</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">archives/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
 
 
 <h2 id="Hexo推荐文章插件"><a href="#Hexo推荐文章插件" class="headerlink" title="Hexo推荐文章插件"></a>Hexo推荐文章插件</h2><p>这个可以帮助我们根据标签推荐相关文章，原版插件的使用要求编辑主题文件的，但是 NexT 主题集成了这个插件的配置，因此配置起来非常方便。</p>
@@ -18851,7 +18851,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-douban --save</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>具体配置教程见：<a href="https://tding.top/archives/c7ba3a41.html">Hexo 加入豆瓣读书页面</a></li>
+<li>具体配置教程见：<a href="https://loye168.github.io/archives/c7ba3a41.html">Hexo 加入豆瓣读书页面</a></li>
 </ul>
 <h2 id="Hexo站点地图sitemap生成"><a href="#Hexo站点地图sitemap生成" class="headerlink" title="Hexo站点地图sitemap生成"></a>Hexo站点地图sitemap生成</h2><h3 id="通用站点地图"><a href="#通用站点地图" class="headerlink" title="通用站点地图"></a>通用站点地图</h3><ul>
 <li>地址：<a href="https://github.com/hexojs/hexo-generator-sitemap" target="_blank" rel="noopener external nofollow noreferrer">hexo-generator-sitemap</a></li>
@@ -18879,7 +18879,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
 
 <p>在站点配置文件<code>_config.yml</code>中添加以下代码：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 百度主动推送</span></span><br><span class="line"><span class="attr">baidu_url_submit:</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">5</span> 				     <span class="comment">## 提交最新的1个链接</span></span><br><span class="line">  <span class="attr">host:</span> <span class="string">tding.top</span> 	     <span class="comment">## 百度站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">token:</span> 	 <span class="comment">## 准入秘钥</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidu_urls.txt</span> 		 <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 百度主动推送</span></span><br><span class="line"><span class="attr">baidu_url_submit:</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">5</span> 				     <span class="comment">## 提交最新的1个链接</span></span><br><span class="line">  <span class="attr">host:</span> <span class="string">loye168.github.io</span> 	     <span class="comment">## 百度站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">token:</span> 	 <span class="comment">## 准入秘钥</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidu_urls.txt</span> 		 <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
 
 
 <h2 id="Hexo字数和阅读时间统计插件"><a href="#Hexo字数和阅读时间统计插件" class="headerlink" title="Hexo字数和阅读时间统计插件"></a>Hexo字数和阅读时间统计插件</h2><h3 id="地址-4"><a href="#地址-4" class="headerlink" title="地址"></a>地址</h3><ul>
@@ -19057,9 +19057,9 @@
 </ul>
 <p>注意：本文主要关注加载速度优化，不考虑因为网络问题导致的访问慢问题，由于国内访问GitHub Pages速度不佳，我们可以将博客部署到国内的VPS、Coding Pages，或者采用CDN加速，具体可以参考：</p>
 <ul>
-<li><a href="https://tding.top/archives/12a4e7e6.html">Hexo 博客部署到 VPS</a></li>
-<li><a href="https://tding.top/archives/e09249d2.html">Hexo 博客部署到 Coding</a></li>
-<li><a href="https://tding.top/archives/12c6c559.html">Hexo 配置 Cloudflare 免费 CDN</a></li>
+<li><a href="https://loye168.github.io/archives/12a4e7e6.html">Hexo 博客部署到 VPS</a></li>
+<li><a href="https://loye168.github.io/archives/e09249d2.html">Hexo 博客部署到 Coding</a></li>
+<li><a href="https://loye168.github.io/archives/12c6c559.html">Hexo 配置 Cloudflare 免费 CDN</a></li>
 </ul>
 <a id="more"></a>
 
@@ -19239,12 +19239,12 @@
 <a id="more"></a>
 
 <h2 id="Hexo实现过程"><a href="#Hexo实现过程" class="headerlink" title="Hexo实现过程"></a>Hexo实现过程</h2><ol>
-<li><p>首先，我们可以在<a href="https://tding.top/js/tw_cn.js">这里</a>右键另存下载简繁字体切换所需的<code>tw_cn.js</code>文件，我们把这个文件放到<code>~/themes/next/source/js</code>文件夹下。</p>
+<li><p>首先，我们可以在<a href="https://loye168.github.io/js/tw_cn.js">这里</a>右键另存下载简繁字体切换所需的<code>tw_cn.js</code>文件，我们把这个文件放到<code>~/themes/next/source/js</code>文件夹下。</p>
 </li>
 <li><p><strong>修改模板</strong>，在我们想要显示简繁转换按钮的地方添加如下代码。例如，我在NexT主题的布局文件<code>~/themes/next/layout/_partials/footer.swig</code>里添加了如下代码：</p>
 </li>
 </ol>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"translate-style"</span>&gt;</span></span><br><span class="line">繁/简：<span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">"translateLink"</span> <span class="attr">href</span>=<span class="string">"javascript:translatePage();"</span>&gt;</span>繁体</span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/tw_cn.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> defaultEncoding = <span class="number">2</span>; <span class="comment">//网站编写字体是否繁体，1-繁体，2-简体</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> translateDelay = <span class="number">0</span>; <span class="comment">//延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> cookieDomain = <span class="string">"https://tding.top/"</span>; <span class="comment">//Cookie地址, 一定要设定, 通常为你的网址</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> msgToTraditionalChinese = <span class="string">"繁体"</span>; <span class="comment">//此处可以更改为你想要显示的文字</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> msgToSimplifiedChinese = <span class="string">"简体"</span>; <span class="comment">//同上，但两处均不建议更改</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> translateButtonId = <span class="string">"translateLink"</span>; <span class="comment">//默认互换id</span></span></span><br><span class="line">translateInitilization();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"translate-style"</span>&gt;</span></span><br><span class="line">繁/简：<span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">"translateLink"</span> <span class="attr">href</span>=<span class="string">"javascript:translatePage();"</span>&gt;</span>繁体</span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/tw_cn.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> defaultEncoding = <span class="number">2</span>; <span class="comment">//网站编写字体是否繁体，1-繁体，2-简体</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> translateDelay = <span class="number">0</span>; <span class="comment">//延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> cookieDomain = <span class="string">"https://loye168.github.io/"</span>; <span class="comment">//Cookie地址, 一定要设定, 通常为你的网址</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> msgToTraditionalChinese = <span class="string">"繁体"</span>; <span class="comment">//此处可以更改为你想要显示的文字</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> msgToSimplifiedChinese = <span class="string">"简体"</span>; <span class="comment">//同上，但两处均不建议更改</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> translateButtonId = <span class="string">"translateLink"</span>; <span class="comment">//默认互换id</span></span></span><br><span class="line">translateInitilization();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>读者可以在<strong>博客底部点击简体/繁体</strong>来看具体的切换字体效果。</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
@@ -19805,7 +19805,7 @@
 </li>
 </ul>
 <p>本文主要介绍Hexo博客部署在GitHub Pages上并且配置CDN进行加速的方法。</p>
-<p>这里我们假设博客已经部署在GitHub Pages并启用了个性域名。如果你还没有绑定个性域名，可以参考这篇教程：<a href="https://tding.top/archives/b48e2719.html">GitHub Pages 绑定域名</a>，其中域名服务器修改到DNSPod这部分可以不看，因为这里我们会用Cloudflare来完成域名解析。</p>
+<p>这里我们假设博客已经部署在GitHub Pages并启用了个性域名。如果你还没有绑定个性域名，可以参考这篇教程：<a href="https://loye168.github.io/archives/b48e2719.html">GitHub Pages 绑定域名</a>，其中域名服务器修改到DNSPod这部分可以不看，因为这里我们会用Cloudflare来完成域名解析。</p>
 <a id="more"></a>
 
 <h2 id="CDN介绍"><a href="#CDN介绍" class="headerlink" title="CDN介绍"></a>CDN介绍</h2><blockquote>
@@ -19885,10 +19885,10 @@
 <li><code>Browser Cache TTL</code>：即浏览器缓存过期时间，决定浏览器多久向网站获取一次新缓存。</li>
 </ul>
 <h4 id="Page-Rules菜单设置"><a href="#Page-Rules菜单设置" class="headerlink" title="Page Rules菜单设置"></a>Page Rules菜单设置</h4><p>免费版本可以设置3个页面的规则。</p>
-<p>这里我们可以设置forwarding，也就是301跳转，比如我想要让<code>tding.me</code>整个站都跳转到<code>tding.top</code>，具体设置如下图：</p>
+<p>这里我们可以设置forwarding，也就是301跳转，比如我想要让<code>tding.me</code>整个站都跳转到<code>loye168.github.io</code>，具体设置如下图：</p>
 <img src="/archives/12c6c559/%E8%B7%B3%E8%BD%AC%E8%AE%BE%E7%BD%AE.png" class="" title="跳转设置">
 
-<p>注意：如果<code>Forwarding URL</code>设置为<code>https://tding.top</code>，当我们访问<code>tding.me/about.html</code>时会跳转到<code>https://tding.top</code>而不是我们期望的<code>https://tding.top/about.html</code>。解决办法就是使用<strong>变量</strong>，每个通配符对应于可在转发地址中引用的变量。变量用 <code>$</code> 后跟一个数字表示，如果要引用第一个通配符，我们可以使用 <code>$1</code>，如果要引用第二个通配符，我们可以使用 <code>$2</code>，依此类推。<strong>因此，<code>Forwarding URL</code>应该设置成<code>https://tding.top/$1</code></strong>。</p>
+<p>注意：如果<code>Forwarding URL</code>设置为<code>https://loye168.github.io</code>，当我们访问<code>tding.me/about.html</code>时会跳转到<code>https://loye168.github.io</code>而不是我们期望的<code>https://loye168.github.io/about.html</code>。解决办法就是使用<strong>变量</strong>，每个通配符对应于可在转发地址中引用的变量。变量用 <code>$</code> 后跟一个数字表示，如果要引用第一个通配符，我们可以使用 <code>$1</code>，如果要引用第二个通配符，我们可以使用 <code>$2</code>，依此类推。<strong>因此，<code>Forwarding URL</code>应该设置成<code>https://loye168.github.io/$1</code></strong>。</p>
 <h2 id="测速"><a href="#测速" class="headerlink" title="测速"></a>测速</h2><p>下面是Cloudflare CDN加速后（左图）于GitHub Pages本身（右图）的速度对比：</p>
 <img src="/archives/12c6c559/%E6%B5%8B%E9%80%9F.png" class="" title="测速">
 
@@ -20072,11 +20072,11 @@
 
 <p>screen的使用教程可以看：</p>
 <ul>
-<li><a href="https://tding.top/archives/97c310a3.html">Linux screen 使用技巧</a></li>
+<li><a href="https://loye168.github.io/archives/97c310a3.html">Linux screen 使用技巧</a></li>
 </ul>
 <h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>除了通过IP地址访问，还可以自定义邮箱域名，我们只需要在域名服务商的域名设置里面添加以下两条域名解析记录即可：</p>
 <ul>
-<li>添加MX记录：MX记录指向到自定义二级域名<code>mail.tding.top.</code>，其中主机记录设置为<code>@</code>，优先级设置10</li>
+<li>添加MX记录：MX记录指向到自定义二级域名<code>mail.loye168.github.io.</code>，其中主机记录设置为<code>@</code>，优先级设置10</li>
 <li>添加A记录：A记录指向到服务器ip地址，其中主机记录设置为<code>mail</code></li>
 </ul>
 <p>域名解析设置见下图：</p>
@@ -20085,7 +20085,7 @@
 <p>说明：<strong>MX记录的记录值的最后有一个点</strong>，代表主机名结束。在有些域名服务商网站设置的时候不会自动帮您加上，如果漏掉的话 DNS 服务器在解析的时候，会自动并上你的域名，这样会引起解析错误。</p>
 <p>这样，我们可以通过<code>http://自定义域名:3000/</code>来访问临时邮箱了。</p>
 <blockquote>
-<p><strong>最后，欢迎大家用我搭建的临时邮箱来测试：<a href="http://mail.tding.top:3000" target="_blank" rel="noopener external nofollow noreferrer">邮箱地址</a></strong></p>
+<p><strong>最后，欢迎大家用我搭建的临时邮箱来测试：<a href="http://mail.loye168.github.io:3000" target="_blank" rel="noopener external nofollow noreferrer">邮箱地址</a></strong></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -22045,7 +22045,7 @@
 <li>515-在每个树行中找最大值</li>
 </ul>
 <h3 id="详细题解"><a href="#详细题解" class="headerlink" title="详细题解"></a>详细题解</h3><ul>
-<li><a href="https://tding.top/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
+<li><a href="https://loye168.github.io/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
 </ul>
 <h2 id="路径和相关题目"><a href="#路径和相关题目" class="headerlink" title="路径和相关题目"></a>路径和相关题目</h2><p>树的求和属于树的题目中比较常见的，因为可以有几种变体，灵活度比较高，也可以考察到对于树的数据结构和递归的理解。</p>
 <ul>
@@ -22216,7 +22216,7 @@
 <h2 id="二叉搜索树相关题目"><a href="#二叉搜索树相关题目" class="headerlink" title="二叉搜索树相关题目"></a>二叉搜索树相关题目</h2><p>二叉查找树既是一颗树，又带有特别的有序性质，所以考察的方式比较多而且灵活，属于面试题目中的常客。</p>
 <p>此部分详细题解见：</p>
 <ul>
-<li><a href="https://tding.top/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
+<li><a href="https://loye168.github.io/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
 </ul>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
 <li><a href="https://juejin.im/post/5d9f0b9551882509165ff2a8" target="_blank" rel="noopener external nofollow noreferrer">LeetCode 前1000题二叉树题目系统总结（吐血推荐！）</a></li>
@@ -22930,19 +22930,19 @@
 <ul>
 <li><p>算法：</p>
 <ul>
-<li><a href="https://tding.top/archives/fa228c3f.html">LeetCode 题目总结 - 位运算</a></li>
-<li><a href="https://tding.top/archives/647f3958.html">LeetCode 题目总结 - 数组中的双指针问题</a></li>
+<li><a href="https://loye168.github.io/archives/fa228c3f.html">LeetCode 题目总结 - 位运算</a></li>
+<li><a href="https://loye168.github.io/archives/647f3958.html">LeetCode 题目总结 - 数组中的双指针问题</a></li>
 <li>LeetCode 题目总结 - 二分查找</li>
-<li><a href="https://tding.top/archives/551df4d4.html">LeetCode 题目总结 - 链表</a></li>
-<li><a href="https://tding.top/archives/101cdf53.html">LeetCode 题目总结 - 二叉树</a></li>
-<li><a href="https://tding.top/archives/e1014f63.html">LeetCode 题目总结 - 二叉树的遍历</a></li>
-<li><a href="https://tding.top/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
+<li><a href="https://loye168.github.io/archives/551df4d4.html">LeetCode 题目总结 - 链表</a></li>
+<li><a href="https://loye168.github.io/archives/101cdf53.html">LeetCode 题目总结 - 二叉树</a></li>
+<li><a href="https://loye168.github.io/archives/e1014f63.html">LeetCode 题目总结 - 二叉树的遍历</a></li>
+<li><a href="https://loye168.github.io/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
 <li>LeetCode 题目总结 - 动态规划</li>
 </ul>
 </li>
 <li><p>数据库：</p>
 <ul>
-<li><a href="https://tding.top/archives/32d634f4.html">LeetCode 题目总结 - SQL</a></li>
+<li><a href="https://loye168.github.io/archives/32d634f4.html">LeetCode 题目总结 - SQL</a></li>
 </ul>
 </li>
 </ul>
@@ -22980,7 +22980,7 @@
 </ul>
 <a id="more"></a>
 
-<h2 id="链表的基础知识"><a href="#链表的基础知识" class="headerlink" title="链表的基础知识"></a>链表的基础知识</h2><p>数组和链表的对比可以看：<a href="https://tding.top/archives/5c8792e.html">数组和链表的区别</a>。</p>
+<h2 id="链表的基础知识"><a href="#链表的基础知识" class="headerlink" title="链表的基础知识"></a>链表的基础知识</h2><p>数组和链表的对比可以看：<a href="https://loye168.github.io/archives/5c8792e.html">数组和链表的区别</a>。</p>
 <h2 id="链表类题目的常用技巧"><a href="#链表类题目的常用技巧" class="headerlink" title="链表类题目的常用技巧"></a>链表类题目的常用技巧</h2><ol>
 <li><strong>使用dummy node</strong>：dummy node就是在链表的head前加一个节点指向head，即<code>dummy-&gt;head</code>，可以理解成一个虚拟节点。有了dummy node就使得<strong>操作head节点与操作其他节点没有区别</strong>。特别适合用在链表的head发生变化的情况下，譬如删除或者被修改等。</li>
 </ol>
@@ -25019,7 +25019,7 @@
 </tr>
 <tr>
 <td>SITE_URL</td>
-<td><code>https://tding.top/</code></td>
+<td><code>https://loye168.github.io/</code></td>
 <td><code>[必填]</code>首页地址</td>
 </tr>
 <tr>
@@ -25562,40 +25562,40 @@
 <h3 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h3><ul>
 <li><p>线性回归</p>
 <ul>
-<li><a href="https://tding.top/archives/fae43975.html">线性回归介绍和Python实现</a></li>
+<li><a href="https://loye168.github.io/archives/fae43975.html">线性回归介绍和Python实现</a></li>
 </ul>
 </li>
 <li><p>逻辑回归</p>
 <ul>
-<li><a href="https://tding.top/archives/2a97a967.html">逻辑回归介绍</a></li>
+<li><a href="https://loye168.github.io/archives/2a97a967.html">逻辑回归介绍</a></li>
 </ul>
 </li>
 <li><p>朴素贝叶斯</p>
 <ul>
-<li><a href="https://tding.top/archives/4b7871b.html">朴素贝叶斯介绍</a></li>
+<li><a href="https://loye168.github.io/archives/4b7871b.html">朴素贝叶斯介绍</a></li>
 </ul>
 </li>
 <li><p>决策树</p>
 <ul>
-<li><a href="https://tding.top/archives/1059015.html">决策树介绍</a></li>
-<li><a href="https://tding.top/archives/6096d2cd.html">随机森林通俗解释</a></li>
-<li><a href="https://tding.top/archives/7b6c662f.html">GBDT梯度提升树介绍</a></li>
+<li><a href="https://loye168.github.io/archives/1059015.html">决策树介绍</a></li>
+<li><a href="https://loye168.github.io/archives/6096d2cd.html">随机森林通俗解释</a></li>
+<li><a href="https://loye168.github.io/archives/7b6c662f.html">GBDT梯度提升树介绍</a></li>
 </ul>
 </li>
 </ul>
-<p>上面的随机森林和GBDT其实是用了集成学习，通过构建并结合多个机器学习器来完成学习任务。集成学习原理可以见：<a href="https://tding.top/archives/a2665b86.html">集成学习原理小结</a></p>
-<h3 id="无监督学习"><a href="#无监督学习" class="headerlink" title="无监督学习"></a>无监督学习</h3><p>无监督学习的简要介绍：<a href="https://tding.top/archives/7a4d6d3c.html">什么是无监督学习？</a></p>
+<p>上面的随机森林和GBDT其实是用了集成学习，通过构建并结合多个机器学习器来完成学习任务。集成学习原理可以见：<a href="https://loye168.github.io/archives/a2665b86.html">集成学习原理小结</a></p>
+<h3 id="无监督学习"><a href="#无监督学习" class="headerlink" title="无监督学习"></a>无监督学习</h3><p>无监督学习的简要介绍：<a href="https://loye168.github.io/archives/7a4d6d3c.html">什么是无监督学习？</a></p>
 <p>常见的无监督学习算法有聚类：</p>
 <ul>
-<li><a href="https://tding.top/archives/3e3c6c6a.html">KMeans聚类算法</a></li>
-<li><a href="https://tding.top/archives/31ee8a52.html">层次聚类算法</a></li>
+<li><a href="https://loye168.github.io/archives/3e3c6c6a.html">KMeans聚类算法</a></li>
+<li><a href="https://loye168.github.io/archives/31ee8a52.html">层次聚类算法</a></li>
 </ul>
 <p>然后还有一个非常经典的无监督降维算法——主成分分析法：</p>
 <ul>
-<li><a href="https://tding.top/archives/8aecd656.html">PCA通俗解释</a></li>
+<li><a href="https://loye168.github.io/archives/8aecd656.html">PCA通俗解释</a></li>
 </ul>
 <h2 id="机器学习评价指标"><a href="#机器学习评价指标" class="headerlink" title="机器学习评价指标"></a>机器学习评价指标</h2><p>评价指标是机器学习任务中非常重要的一环。不同的机器学习任务有着不同的评价指标，同时同一种机器学习任务也有着不同的评价指标，每个指标的着重点不一样。</p>
-<p>详细见：<a href="https://tding.top/archives/31315aab.html">机器学习评价指标</a></p>
+<p>详细见：<a href="https://loye168.github.io/archives/31315aab.html">机器学习评价指标</a></p>
 ]]></content>
       <categories>
         <category>机器学习</category>
@@ -26829,111 +26829,111 @@
 <h2 id="1、Hexo建站"><a href="#1、Hexo建站" class="headerlink" title="1、Hexo建站"></a>1、Hexo建站</h2><p>首先我们可以在GitHub Pages上搭建个人博客。</p>
 <p>具体过程见下文：</p>
 <ul>
-<li><a href="https://tding.top/archives/7f189df5.html">Hexo建站教程</a></li>
+<li><a href="https://loye168.github.io/archives/7f189df5.html">Hexo建站教程</a></li>
 </ul>
 <h2 id="2、Hexo部署到VPS"><a href="#2、Hexo部署到VPS" class="headerlink" title="2、Hexo部署到VPS"></a>2、Hexo部署到VPS</h2><p>搭建完博客后，我们需要进行搜索引擎优化（SEO）。现在我们的博客是托管在GitHub Pages上，但是GitHub屏蔽了百度的爬虫，对于中文网站来说，百度带来的流量是非常可观的，因此，我需要一个办法让百度收录我的博客。</p>
 <p>这里一个比较简单的办法就是把Hexo博客部署到自己的VPS上。</p>
 <h3 id="第一步：购买个性域名"><a href="#第一步：购买个性域名" class="headerlink" title="第一步：购买个性域名"></a>第一步：购买个性域名</h3><p>这里我推荐Namesilo这个平台，价格比较便宜，而且提供免费的域名隐私保护。</p>
 <p>具体过程见下文：</p>
 <ul>
-<li><a href="https://tding.top/archives/b48e2719.html">GitHub Pages绑定域名</a></li>
+<li><a href="https://loye168.github.io/archives/b48e2719.html">GitHub Pages绑定域名</a></li>
 </ul>
 <h3 id="第二步：部署到VPS"><a href="#第二步：部署到VPS" class="headerlink" title="第二步：部署到VPS"></a>第二步：部署到VPS</h3><p>我们将 Hexo 在本地通过 <code>hexo generate</code> 生成静态文件，在通过 <code>hexo deploy</code> 部署到 VPS 上面，使用 Nginx 直接做 Web 服务器。</p>
 <p>这里我使用的是<code>Git Hooks</code>进行自动部署。</p>
 <p><strong>部署原理</strong>：我们在本地编辑文本，然后使用 Git 远程部署到 VPS 的 Git 仓库。<code>hexo d</code> 命令实际上只 deploy 了本地的 public 文件夹，<code>Git Hooks</code> 实际上就是当 Git 仓库收到最新的 push 时，将 Git 仓库接受到的内容复制到 VPS 上的网站目录内。相当于完成了手动将 public 文件夹复制到 VPS 的网站根目录里。</p>
 <p>具体过程见下文：</p>
 <ul>
-<li><a href="https://tding.top/archives/12a4e7e6.html">Hexo博客部署到VPS</a></li>
+<li><a href="https://loye168.github.io/archives/12a4e7e6.html">Hexo博客部署到VPS</a></li>
 </ul>
 <p><strong>注意：现在需要我们修改下DNSPod的解析地址，把域名解析到VPS的IP地址而不是GitHub的IP地址</strong>。</p>
 <h3 id="第三步：免费升级HTTPS"><a href="#第三步：免费升级HTTPS" class="headerlink" title="第三步：免费升级HTTPS"></a>第三步：免费升级HTTPS</h3><p>为了鼓励 https 的普及，EFF 成立了免费证书最大的提供商为 Let’s Encrypt，可以提供免费证书。</p>
 <p>具体过程见下文：</p>
 <ul>
-<li><a href="https://tding.top/archives/21caa4d0.html">Hexo 升级 HTTPS</a></li>
+<li><a href="https://loye168.github.io/archives/21caa4d0.html">Hexo 升级 HTTPS</a></li>
 </ul>
 <h3 id="第四步：提交搜索引擎收录"><a href="#第四步：提交搜索引擎收录" class="headerlink" title="第四步：提交搜索引擎收录"></a>第四步：提交搜索引擎收录</h3><p>通过上面三步，我们已经完成了Hexo在VPS上的部署并且开启了HTTPS，下面我们只需要注册一个百度站长账号，然后提交sitemap，静等百度收录我们的个人网站。</p>
 <p>具体过程见下文：</p>
 <ul>
-<li><a href="https://tding.top/archives/4ea54752.html">Hexo-NexT 博客提交搜索引擎收录</a></li>
+<li><a href="https://loye168.github.io/archives/4ea54752.html">Hexo-NexT 博客提交搜索引擎收录</a></li>
 </ul>
 <h2 id="3、Hexo双线部署在GitHub-Pages和Coding-Pages"><a href="#3、Hexo双线部署在GitHub-Pages和Coding-Pages" class="headerlink" title="3、Hexo双线部署在GitHub Pages和Coding Pages"></a>3、Hexo双线部署在GitHub Pages和Coding Pages</h2><p>下面是双线部署的过程：</p>
 <ul>
-<li><a href="https://tding.top/archives/e09249d2.html">Hexo 博客部署到 Coding</a></li>
+<li><a href="https://loye168.github.io/archives/e09249d2.html">Hexo 博客部署到 Coding</a></li>
 </ul>
 <p>完成双线部署后，境外访问就会走 GitHub，境内就会走 Coding，大大提升了访问速度。</p>
 <h2 id="4、Hexo博客部署在GitHub-Pages上并且配置CDN进行加速"><a href="#4、Hexo博客部署在GitHub-Pages上并且配置CDN进行加速" class="headerlink" title="4、Hexo博客部署在GitHub Pages上并且配置CDN进行加速"></a>4、Hexo博客部署在GitHub Pages上并且配置CDN进行加速</h2><p>由于Coding Pages的服务并不是那么稳定，近期出现多次不能正常部署或访问Pages的问题，所以我现在采用了<strong>博客部署在GitHub Pages上并且配置CDN进行加速</strong>的方法。</p>
 <p>国内的CDN服务提供商有不少，但是基本都需要备案，因此我用了Cloudflare这个国外的CDN服务提供商。</p>
 <p>配置CDN的过程见：</p>
 <ul>
-<li><a href="https://tding.top/archives/12c6c559.html">Hexo配置Cloudflare免费CDN</a></li>
+<li><a href="https://loye168.github.io/archives/12c6c559.html">Hexo配置Cloudflare免费CDN</a></li>
 </ul>
 <h2 id="5、Hexo主题选择"><a href="#5、Hexo主题选择" class="headerlink" title="5、Hexo主题选择"></a>5、Hexo主题选择</h2><p>Hexo有很多简洁美观的主题，大家可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener external nofollow noreferrer">Hexo-Themes</a>去选择自己喜欢的主题。</p>
 <p>我使用过Yilia和NexT这两款主题，下面是我美化过程的一个记录。</p>
 <h3 id="Hexo-NexT主题美化"><a href="#Hexo-NexT主题美化" class="headerlink" title="Hexo NexT主题美化"></a>Hexo NexT主题美化</h3><h4 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h4><p>下面是NexT主题的基本配置以及内置的Tag插件使用说明：</p>
 <ul>
-<li><a href="https://tding.top/archives/42c38b10.html">Hexo-NexT(v7.0+)主题配置</a></li>
-<li><a href="https://tding.top/archives/29bfe8c9.html">Hexo-NexT Tag 插件的使用</a></li>
+<li><a href="https://loye168.github.io/archives/42c38b10.html">Hexo-NexT(v7.0+)主题配置</a></li>
+<li><a href="https://loye168.github.io/archives/29bfe8c9.html">Hexo-NexT Tag 插件的使用</a></li>
 </ul>
 <h4 id="自定义子页面"><a href="#自定义子页面" class="headerlink" title="自定义子页面"></a>自定义子页面</h4><p>NexT主题自带的子页面很少，只有首页、标签、分类、归档、关于等子页面。为了记录更多的内容，我添加了<strong>豆瓣读书、豆瓣电影、画廊、热榜</strong>等子页面，具体过程以及效果见下面：</p>
 <ul>
-<li><a href="https://tding.top/archives/c7ba3a41.html">Hexo加入豆瓣读书页面</a><ul>
-<li>具体效果见：<a href="https://tding.top/books/">loye的个人博客-豆瓣电影</a></li>
+<li><a href="https://loye168.github.io/archives/c7ba3a41.html">Hexo加入豆瓣读书页面</a><ul>
+<li>具体效果见：<a href="https://loye168.github.io/books/">loye的个人博客-豆瓣电影</a></li>
 </ul>
 </li>
-<li><a href="https://tding.top/archives/607c3b85.html">Hexo-NexT实现相册</a><ul>
-<li>具体效果见：<a href="https://tding.top/gallery/">loye的个人博客-画廊</a></li>
+<li><a href="https://loye168.github.io/archives/607c3b85.html">Hexo-NexT实现相册</a><ul>
+<li>具体效果见：<a href="https://loye168.github.io/gallery/">loye的个人博客-画廊</a></li>
 </ul>
 </li>
-<li><a href="https://tding.top/archives/baf1ffd.html">Hexo-NexT新增阅读排行页面</a><ul>
-<li>具体效果见：<a href="https://tding.top/top/">loye的个人博客-热榜</a></li>
+<li><a href="https://loye168.github.io/archives/baf1ffd.html">Hexo-NexT新增阅读排行页面</a><ul>
+<li>具体效果见：<a href="https://loye168.github.io/top/">loye的个人博客-热榜</a></li>
 </ul>
 </li>
-<li><a href="https://tding.top/archives/73ce4e7.html">Hexo-NexT新增友链</a><ul>
-<li>具体效果见：<a href="https://tding.top/about/links.html">loye的个人博客-友链</a></li>
+<li><a href="https://loye168.github.io/archives/73ce4e7.html">Hexo-NexT新增友链</a><ul>
+<li>具体效果见：<a href="https://loye168.github.io/about/links.html">loye的个人博客-友链</a></li>
 </ul>
 </li>
 </ul>
 <h4 id="第三方服务配置"><a href="#第三方服务配置" class="headerlink" title="第三方服务配置"></a>第三方服务配置</h4><p>有一些服务，包括评论、在线聊天、文章评分、分享等功能无法通过静态页面实现，所以我用了第三方服务商提供上述服务，具体配置过程如下：</p>
 <ul>
-<li><a href="https://tding.top/archives/7696c13f.html">Hexo-NexT 添加第三方服务</a></li>
+<li><a href="https://loye168.github.io/archives/7696c13f.html">Hexo-NexT 添加第三方服务</a></li>
 </ul>
 <p>由于Disqus这个评论服务需要科学上网才能使用，不利于交流，因此我换用了Valine，配置过程如下：</p>
 <ul>
-<li><a href="https://tding.top/archives/ed8b904f.html">Hexo-NexT 配置 Valine</a></li>
+<li><a href="https://loye168.github.io/archives/ed8b904f.html">Hexo-NexT 配置 Valine</a></li>
 </ul>
-<p>有时候，我们想要在个人博客的<a href="https://tding.top/about/">“关于”</a>栏目下展示自己的GitHub Chart，如下图所示：</p>
+<p>有时候，我们想要在个人博客的<a href="https://loye168.github.io/about/">“关于”</a>栏目下展示自己的GitHub Chart，如下图所示：</p>
 <p><img src="https://ghchart.rshah.org/dta0502" alt=""></p>
 <p>具体设置过程可以见：</p>
 <ul>
-<li><a href="https://tding.top/archives/90b9ba07.html">Hexo 博客展示 GitHub Chart</a></li>
+<li><a href="https://loye168.github.io/archives/90b9ba07.html">Hexo 博客展示 GitHub Chart</a></li>
 </ul>
 <p>更多第三方服务配置：</p>
 <ul>
-<li><a href="https://tding.top/archives/567debe0.html">本博客当前使用的插件总结</a></li>
+<li><a href="https://loye168.github.io/archives/567debe0.html">本博客当前使用的插件总结</a></li>
 </ul>
 <h4 id="页面加载性能优化"><a href="#页面加载性能优化" class="headerlink" title="页面加载性能优化"></a>页面加载性能优化</h4><ul>
-<li><a href="https://tding.top/archives/7e5b094d.html">Hexo-NexT 加载性能优化</a></li>
+<li><a href="https://loye168.github.io/archives/7e5b094d.html">Hexo-NexT 加载性能优化</a></li>
 </ul>
 <h4 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a>自定义样式</h4><p>下面是一些自定义样式美化：</p>
 <ul>
-<li><a href="https://tding.top/archives/761b6f4d.html">Hexo-NexT 设置博客背景图片</a></li>
-<li><a href="https://tding.top/archives/dd68b70.html">Hexo-NexT 增加 canvas 粒子时钟</a></li>
-<li><a href="https://tding.top/archives/58cff12b.html">Hexo-NexT 添加打字特效、鼠标点击特效</a></li>
-<li><a href="https://tding.top/archives/bd4d996d.html">Hexo-NexT 代码块折叠</a></li>
-<li><a href="https://tding.top/archives/dfac1e9c.html">Hexo-NexT 主题样式美化 - 动画设置</a></li>
+<li><a href="https://loye168.github.io/archives/761b6f4d.html">Hexo-NexT 设置博客背景图片</a></li>
+<li><a href="https://loye168.github.io/archives/dd68b70.html">Hexo-NexT 增加 canvas 粒子时钟</a></li>
+<li><a href="https://loye168.github.io/archives/58cff12b.html">Hexo-NexT 添加打字特效、鼠标点击特效</a></li>
+<li><a href="https://loye168.github.io/archives/bd4d996d.html">Hexo-NexT 代码块折叠</a></li>
+<li><a href="https://loye168.github.io/archives/dfac1e9c.html">Hexo-NexT 主题样式美化 - 动画设置</a></li>
 </ul>
 <p>字体设置：</p>
 <ul>
-<li><a href="https://tding.top/archives/3cdfe265.html">Hexo-NexT 支持简体繁体一键切换</a></li>
+<li><a href="https://loye168.github.io/archives/3cdfe265.html">Hexo-NexT 支持简体繁体一键切换</a></li>
 </ul>
 <h4 id="NexT版本更新记录"><a href="#NexT版本更新记录" class="headerlink" title="NexT版本更新记录"></a>NexT版本更新记录</h4><ul>
-<li><a href="https://tding.top/archives/2bd6d82.html">Hexo-NexT版本更新记录</a></li>
+<li><a href="https://loye168.github.io/archives/2bd6d82.html">Hexo-NexT版本更新记录</a></li>
 </ul>
 <h3 id="Hexo-Yilia主题美化"><a href="#Hexo-Yilia主题美化" class="headerlink" title="Hexo Yilia主题美化"></a>Hexo Yilia主题美化</h3><ul>
-<li><a href="https://tding.top/archives/9a232bbe.html">Hexo-Yilia进阶笔记</a></li>
+<li><a href="https://loye168.github.io/archives/9a232bbe.html">Hexo-Yilia进阶笔记</a></li>
 </ul>
 <blockquote>
-<p>我的个人博客地址：<a href="https://tding.top/">loye的个人博客</a></p>
+<p>我的个人博客地址：<a href="https://loye168.github.io/">loye的个人博客</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -26952,7 +26952,7 @@
     <url>/archives/bd4d996d.html</url>
     <content><![CDATA[<p>有些时候，代码块很长，我们可以通过代码块折叠来减少全文的长度，使得阅读全文更加方便。</p>
 <p>主题版本：NexT-7.1.2</p>
-<p>2020-03-01更新：现在NexT主题已经更新到7.7.1，在最新主题下配置这个代码块折叠的方法详见：<a href="https://tding.top/archives/2bd6d82.html">Hexo-NexT 版本更新记录</a>。</p>
+<p>2020-03-01更新：现在NexT主题已经更新到7.7.1，在最新主题下配置这个代码块折叠的方法详见：<a href="https://loye168.github.io/archives/2bd6d82.html">Hexo-NexT 版本更新记录</a>。</p>
 <a id="more"></a>
 
 <h2 id="新建内建标签"><a href="#新建内建标签" class="headerlink" title="新建内建标签"></a>新建<code>内建标签</code></h2><p>新建<code>hexo-theme-next/scripts/custom/fold_tag.js</code>：</p>
@@ -27142,18 +27142,18 @@
   <entry>
     <title>Hexo-NexT新增阅读排行页面</title>
     <url>/archives/baf1ffd.html</url>
-    <content><![CDATA[<p>本文基于 leancloud 的数据实现了一个<a href="https://tding.top/top/">阅读排行页面</a>。</p>
+    <content><![CDATA[<p>本文基于 leancloud 的数据实现了一个<a href="https://loye168.github.io/top/">阅读排行页面</a>。</p>
 <a id="more"></a>
 
 <h2 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h2><p><code>hexo n page top</code> 新建页面，会生成 top 目录，编辑其中自动生成的 <code>index.md</code> 文件，将其中的代码替换如下：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"top"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="actionscript">AV.initialize(<span class="string">"leancloud_appid"</span>, <span class="string">"leancloud_appkey"</span>);</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> time=<span class="number">0</span></span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> title=<span class="string">""</span></span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> url=<span class="string">""</span></span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> query = <span class="keyword">new</span> AV.Query(<span class="string">'Counter'</span>);</span></span><br><span class="line"><span class="actionscript">  query.notEqualTo(<span class="string">'id'</span>,<span class="number">0</span>);</span></span><br><span class="line"><span class="actionscript">  query.descending(<span class="string">'time'</span>);</span></span><br><span class="line">  query.limit(1000);</span><br><span class="line"><span class="actionscript">  query.find().then(<span class="function"><span class="keyword">function</span> <span class="params">(todo)</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;<span class="number">1000</span>;i++)&#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> result=todo[i].attributes;</span></span><br><span class="line">      time=result.time;</span><br><span class="line">      title=result.title;</span><br><span class="line">      url=result.url;</span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> content=<span class="string">"&lt;p&gt;"</span>+<span class="string">"&lt;font color='#1C1C1C'&gt;"</span>+<span class="string">"【文章热度:"</span>+time+<span class="string">"℃】"</span>+<span class="string">"&lt;/font&gt;"</span>+<span class="string">"&lt;a href='"</span>+<span class="string">"https://tding.top"</span>+url+<span class="string">"'&gt;"</span>+title+<span class="string">"&lt;/a&gt;"</span>+<span class="string">"&lt;/p&gt;"</span>;</span></span><br><span class="line"><span class="javascript">      <span class="built_in">document</span>.getElementById(<span class="string">"top"</span>).innerHTML+=content</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">  &#125;, <span class="function"><span class="keyword">function</span> <span class="params">(error)</span> </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="string">"error"</span>);</span></span><br><span class="line">  &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"top"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="actionscript">AV.initialize(<span class="string">"leancloud_appid"</span>, <span class="string">"leancloud_appkey"</span>);</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> time=<span class="number">0</span></span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> title=<span class="string">""</span></span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> url=<span class="string">""</span></span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> query = <span class="keyword">new</span> AV.Query(<span class="string">'Counter'</span>);</span></span><br><span class="line"><span class="actionscript">  query.notEqualTo(<span class="string">'id'</span>,<span class="number">0</span>);</span></span><br><span class="line"><span class="actionscript">  query.descending(<span class="string">'time'</span>);</span></span><br><span class="line">  query.limit(1000);</span><br><span class="line"><span class="actionscript">  query.find().then(<span class="function"><span class="keyword">function</span> <span class="params">(todo)</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;<span class="number">1000</span>;i++)&#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> result=todo[i].attributes;</span></span><br><span class="line">      time=result.time;</span><br><span class="line">      title=result.title;</span><br><span class="line">      url=result.url;</span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> content=<span class="string">"&lt;p&gt;"</span>+<span class="string">"&lt;font color='#1C1C1C'&gt;"</span>+<span class="string">"【文章热度:"</span>+time+<span class="string">"℃】"</span>+<span class="string">"&lt;/font&gt;"</span>+<span class="string">"&lt;a href='"</span>+<span class="string">"https://loye168.github.io"</span>+url+<span class="string">"'&gt;"</span>+title+<span class="string">"&lt;/a&gt;"</span>+<span class="string">"&lt;/p&gt;"</span>;</span></span><br><span class="line"><span class="javascript">      <span class="built_in">document</span>.getElementById(<span class="string">"top"</span>).innerHTML+=content</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">  &#125;, <span class="function"><span class="keyword">function</span> <span class="params">(error)</span> </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="string">"error"</span>);</span></span><br><span class="line">  &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>并将其中的 <code>leancloud_appid</code>、<code>leancloud_appkey</code> 和<strong>页面链接</strong>替换为你的。</p>
 <p>由于一些因素，我后面迁移到了Leancloud国际版，然后阅读排行榜就无法正常显示了，报出如下错误：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Failed to load resource: the server responded with a status of 403 () us.leancloud.cn&#x2F;1.1&#x2F;classes&#x2F;Counter?redirectByAPI&#x3D;cn:1</span><br></pre></td></tr></table></figure>
 
 <p>最后发现，美国节点需要调用 <code>AV.useAVCloudUS()</code>，因此以上代码需要修改为：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;div id="top"&gt;&lt;/div&gt;</span><br><span class="line">&lt;script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"&gt;&lt;/script&gt;</span><br><span class="line"><span class="deletion">-&lt;script&gt;AV.initialize("leancloud_appid", "leancloud_appkey");&lt;/script&gt;</span></span><br><span class="line"><span class="addition">+&lt;script&gt;AV.initialize("leancloud_appid", "leancloud_appkey");AV.useAVCloudUS();&lt;/script&gt;</span></span><br><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">  var time=0</span><br><span class="line">  var title=""</span><br><span class="line">  var url=""</span><br><span class="line">  var query = new AV.Query('Counter');</span><br><span class="line">  query.notEqualTo('id',0);</span><br><span class="line">  query.descending('time');</span><br><span class="line">  query.limit(1000);</span><br><span class="line">  query.find().then(function (todo) &#123;</span><br><span class="line">    for (var i=0;i&lt;1000;i++)&#123;</span><br><span class="line">      var result=todo[i].attributes;</span><br><span class="line">      time=result.time;</span><br><span class="line">      title=result.title;</span><br><span class="line">      url=result.url;</span><br><span class="line">      var content="&lt;p&gt;"+"&lt;font color='#1C1C1C'&gt;"+"【文章热度:"+time+"℃】"+"&lt;/font&gt;"+"&lt;a href='"+"https://tding.top"+url+"'&gt;"+title+"&lt;/a&gt;"+"&lt;/p&gt;";</span><br><span class="line">      document.getElementById("top").innerHTML+=content</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;, function (error) &#123;</span><br><span class="line">    console.log("error");</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;div id="top"&gt;&lt;/div&gt;</span><br><span class="line">&lt;script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"&gt;&lt;/script&gt;</span><br><span class="line"><span class="deletion">-&lt;script&gt;AV.initialize("leancloud_appid", "leancloud_appkey");&lt;/script&gt;</span></span><br><span class="line"><span class="addition">+&lt;script&gt;AV.initialize("leancloud_appid", "leancloud_appkey");AV.useAVCloudUS();&lt;/script&gt;</span></span><br><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">  var time=0</span><br><span class="line">  var title=""</span><br><span class="line">  var url=""</span><br><span class="line">  var query = new AV.Query('Counter');</span><br><span class="line">  query.notEqualTo('id',0);</span><br><span class="line">  query.descending('time');</span><br><span class="line">  query.limit(1000);</span><br><span class="line">  query.find().then(function (todo) &#123;</span><br><span class="line">    for (var i=0;i&lt;1000;i++)&#123;</span><br><span class="line">      var result=todo[i].attributes;</span><br><span class="line">      time=result.time;</span><br><span class="line">      title=result.title;</span><br><span class="line">      url=result.url;</span><br><span class="line">      var content="&lt;p&gt;"+"&lt;font color='#1C1C1C'&gt;"+"【文章热度:"+time+"℃】"+"&lt;/font&gt;"+"&lt;a href='"+"https://loye168.github.io"+url+"'&gt;"+title+"&lt;/a&gt;"+"&lt;/p&gt;";</span><br><span class="line">      document.getElementById("top").innerHTML+=content</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;, function (error) &#123;</span><br><span class="line">    console.log("error");</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
 <h2 id="配置菜单显示"><a href="#配置菜单显示" class="headerlink" title="配置菜单显示"></a>配置菜单显示</h2><p>编辑主题配置文件 themes\next_config.yml，添加 top：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="attr">top:</span> <span class="string">/top/</span> <span class="string">||</span> <span class="string">signal</span></span><br></pre></td></tr></table></figure>
@@ -27193,7 +27193,7 @@
 <li><code>baidusitemap.xml</code>用来提交给百度</li>
 </ul>
 <h2 id="Google-Search-Console"><a href="#Google-Search-Console" class="headerlink" title="Google Search Console"></a>Google Search Console</h2><h3 id="查看是否被收录"><a href="#查看是否被收录" class="headerlink" title="查看是否被收录"></a>查看是否被收录</h3><p>首先查看你的博客地址是否已经被Google收录，在Google的搜索栏中搜索：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">site:https:&#x2F;&#x2F;tding.top</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">site:https:&#x2F;&#x2F;loye168.github.io</span><br></pre></td></tr></table></figure>
 
 <h3 id="搜索资源提交"><a href="#搜索资源提交" class="headerlink" title="搜索资源提交"></a>搜索资源提交</h3><p>进入Google Web Master Search Console，首先需要进行站点验证，由于NexT-7.1.2已经内置了这个方法，所以这里只需要在主题配置文件<code>_config.yml</code>把验证代码写上去就可以：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Google Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://www.google.com/webmasters</span></span><br><span class="line"><span class="attr">google_site_verification:</span> <span class="string">smrzctX4--4QKjd_jAPttPxWy06c4SLQo2v1sHBA5rE</span></span><br></pre></td></tr></table></figure>
@@ -27214,11 +27214,11 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
 
 <p>然后在站点配置文件<code>_config.yml</code>添加：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">baidu_url_submit:</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">5</span> 				     <span class="comment">## 提交最新的五个链接</span></span><br><span class="line">  <span class="attr">host:</span> <span class="string">tding.top</span>	     <span class="comment">## 百度站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">token:</span> <span class="string">xxxxxxxxxxx</span>	 <span class="comment">## 准入秘钥</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidu_urls.txt</span> <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">baidu_url_submit:</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">5</span> 				     <span class="comment">## 提交最新的五个链接</span></span><br><span class="line">  <span class="attr">host:</span> <span class="string">loye168.github.io</span>	     <span class="comment">## 百度站长平台中注册的域名</span></span><br><span class="line">  <span class="attr">token:</span> <span class="string">xxxxxxxxxxx</span>	 <span class="comment">## 准入秘钥</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidu_urls.txt</span> <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
 
 <p>准入秘钥可以在<code>链接提交-自动提交-主动推送（实时）</code>中查看。</p>
 <p>然后我们需要保证站点<code>_config.yml</code>文件中url的值是百度站长平台注册的域名， 比如:</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://tding.top/</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://loye168.github.io/</span></span><br></pre></td></tr></table></figure>
 
 <p>最后，加入新的deployer-baidu_url_submitter:</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:dta0502/dta0502.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="comment"># other deployer</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">leancloud_counter_security_sync</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">type:</span> <span class="string">baidu_url_submitter</span></span><br></pre></td></tr></table></figure>
@@ -27229,7 +27229,7 @@
 <p>然后就会将一下代码自动推送到百度，位置是<code>themes\next\layout_scripts\baidu_push.swig</code>,这样每次访问博客中的页面就会自动向百度提交sitemap。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.baidu_push %&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> bp = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> curProtocol = <span class="built_in">window</span>.location.protocol.split(<span class="string">':'</span>)[<span class="number">0</span>];</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">if</span> (curProtocol === <span class="string">'https'</span>) &#123;</span></span><br><span class="line"><span class="actionscript">        bp.src = <span class="string">'https://zz.bdstatic.com/linksubmit/push.js'</span>;        </span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="actionscript">        bp.src = <span class="string">'http://push.zhanzhang.baidu.com/push.js'</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>];</span></span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="sitemap提交"><a href="#sitemap提交" class="headerlink" title="sitemap提交"></a>sitemap提交</h4><p>首先访问之前生成的sitemap文件测试是否成功：<code>https://tding.top/baidusitemap.xml</code></p>
+<h4 id="sitemap提交"><a href="#sitemap提交" class="headerlink" title="sitemap提交"></a>sitemap提交</h4><p>首先访问之前生成的sitemap文件测试是否成功：<code>https://loye168.github.io/baidusitemap.xml</code></p>
 <p>然后我们可以在<code>链接提交-自动提交-sitemap提交</code>中进行站点地图的提交。</p>
 <p>输入验证码后提交即可，一般情况下，百度会在一小时内处理该文件，并提取其中的url。</p>
 <h3 id="部署Hexo到VPS并且开启HTTPS"><a href="#部署Hexo到VPS并且开启HTTPS" class="headerlink" title="部署Hexo到VPS并且开启HTTPS"></a>部署Hexo到VPS并且开启HTTPS</h3><p>由于百度蜘蛛采集链接信息之前需要访问 <code>baidusitemap.xml</code> 文件，而这个文件是在 GitHub Pages 里面的，但是 GitHub Pages 是禁止百度蜘蛛爬取的，所以百度蜘蛛在获取 <code>baidusitemap.xml</code> 文件这一步骤就被禁止了，GitHub Pages 返回 403 错误，因此抓取失败（哪怕获取到 <code>baidusitemap.xml</code> 文件也不行，因为后续需要采集的静态网页全部是放在 GitHub Pages 中的，全部都会被禁止）。</p>
@@ -27241,11 +27241,11 @@
 <p>下面是GitHub的一个回复：</p>
 <p>I’ve confirmed that we are currently blocking the Baidu user agent from crawling GitHub Pages sites. We took this action in response to this user agent being responsible for an excessive amount of requests, which was causing availability issues for other GitHub customers. This is unlikely to change any time soon, so if you need the Baidu user agent to be able to crawl your site you will need to host it elsewhere.</p>
 </blockquote>
-<p>因此我需要把Hexo部署到自己的VPS上，具体的部署过程见：<a href="https://tding.top/archives/12a4e7e6.html">Hexo 博客部署到 VPS</a>。</p>
-<p>为了能够部署到VPS，那就需要绑定一个个性域名，具体过程见<a href="https://tding.top/archives/b48e2719.html">GitHub Pages绑定域名</a>。</p>
-<p>然后再把Hexo升级HTTPS，具体步骤见：<a href="https://tding.top/archives/21caa4d0.html">Hexo升级HTTPS</a></p>
+<p>因此我需要把Hexo部署到自己的VPS上，具体的部署过程见：<a href="https://loye168.github.io/archives/12a4e7e6.html">Hexo 博客部署到 VPS</a>。</p>
+<p>为了能够部署到VPS，那就需要绑定一个个性域名，具体过程见<a href="https://loye168.github.io/archives/b48e2719.html">GitHub Pages绑定域名</a>。</p>
+<p>然后再把Hexo升级HTTPS，具体步骤见：<a href="https://loye168.github.io/archives/21caa4d0.html">Hexo升级HTTPS</a></p>
 <p>同时由于我们知道了百度爬虫的用户代理，那么就可以直接使用 curl 命令来模拟百度爬虫的请求，观察返回的 http 结果是否正常：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -A <span class="string">"Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"</span> https://tding.top/baidusitemap.xml</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -A <span class="string">"Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"</span> https://loye168.github.io/baidusitemap.xml</span><br></pre></td></tr></table></figure>
 
 <p>结果看出模拟请求的结果是正常的。</p>
 <h2 id="搜狗站长平台"><a href="#搜狗站长平台" class="headerlink" title="搜狗站长平台"></a>搜狗站长平台</h2><p>文件路径：<code>~\themes\next\layout\_partials\head\head.swig</code>，添加以下代码：</p>
@@ -27292,15 +27292,15 @@
 
 <p>如果遇到权限问题，记得先创建<code>/opt/letsencrypt</code>文件夹再更改文件夹权限为可写入。</p>
 <h2 id="注册证书-Nginx指向静态路径"><a href="#注册证书-Nginx指向静态路径" class="headerlink" title="注册证书-Nginx指向静态路径"></a>注册证书-Nginx指向静态路径</h2><p>注册一个域名证书非常简单,使用letsencrypt就能生成https所需的证书。当然，用letsencrypt生成的证书只支持域名验证，只需要用letsenctypt的自动注册证书命令，证明这个域名是自己的是用的即可。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /opt/letsencrypt</span><br><span class="line">./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/blog -d tding.top</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /opt/letsencrypt</span><br><span class="line">./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/blog -d loye168.github.io</span><br></pre></td></tr></table></figure>
 
 <p>后续将会让你继续输入邮箱信息。</p>
 <p>然后出现了如下错误：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Saving debug log to &#x2F;var&#x2F;log&#x2F;letsencrypt&#x2F;letsencrypt.log</span><br><span class="line">Plugins selected: Authenticator webroot, Installer None</span><br><span class="line">Obtaining a new certificate</span><br><span class="line">Performing the following challenges:</span><br><span class="line">http-01 challenge for tding.top</span><br><span class="line">Using the webroot path &#x2F;var&#x2F;www&#x2F;blog for all unmatched domains.</span><br><span class="line">Waiting for verification...</span><br><span class="line">Challenge failed for domain tding.top</span><br><span class="line">http-01 challenge for tding.top</span><br><span class="line">Cleaning up challenges</span><br><span class="line">Some challenges have failed.</span><br><span class="line"></span><br><span class="line">IMPORTANT NOTES:</span><br><span class="line"> - The following errors were reported by the server:</span><br><span class="line"></span><br><span class="line">   Domain: tding.top</span><br><span class="line">   Type:   connection</span><br><span class="line">   Detail: Fetching</span><br><span class="line">   http:&#x2F;&#x2F;tding.top&#x2F;.well-known&#x2F;acme-challenge&#x2F;-OO3Ftn96u4kKPKKUkyFHxa6ntdZioOfEF-x5_CwKpY:</span><br><span class="line">   Connection refused</span><br><span class="line"></span><br><span class="line">   To fix these errors, please make sure that your domain name was</span><br><span class="line">   entered correctly and the DNS A&#x2F;AAAA record(s) for that domain</span><br><span class="line">   contain(s) the right IP address. Additionally, please check that</span><br><span class="line">   your computer has a publicly routable IP address and that no</span><br><span class="line">   firewalls are preventing the server from communicating with the</span><br><span class="line">   client. If you&#39;re using the webroot plugin, you should also verify</span><br><span class="line">   that you are serving files from the webroot path you provided.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Saving debug log to &#x2F;var&#x2F;log&#x2F;letsencrypt&#x2F;letsencrypt.log</span><br><span class="line">Plugins selected: Authenticator webroot, Installer None</span><br><span class="line">Obtaining a new certificate</span><br><span class="line">Performing the following challenges:</span><br><span class="line">http-01 challenge for loye168.github.io</span><br><span class="line">Using the webroot path &#x2F;var&#x2F;www&#x2F;blog for all unmatched domains.</span><br><span class="line">Waiting for verification...</span><br><span class="line">Challenge failed for domain loye168.github.io</span><br><span class="line">http-01 challenge for loye168.github.io</span><br><span class="line">Cleaning up challenges</span><br><span class="line">Some challenges have failed.</span><br><span class="line"></span><br><span class="line">IMPORTANT NOTES:</span><br><span class="line"> - The following errors were reported by the server:</span><br><span class="line"></span><br><span class="line">   Domain: loye168.github.io</span><br><span class="line">   Type:   connection</span><br><span class="line">   Detail: Fetching</span><br><span class="line">   http:&#x2F;&#x2F;loye168.github.io&#x2F;.well-known&#x2F;acme-challenge&#x2F;-OO3Ftn96u4kKPKKUkyFHxa6ntdZioOfEF-x5_CwKpY:</span><br><span class="line">   Connection refused</span><br><span class="line"></span><br><span class="line">   To fix these errors, please make sure that your domain name was</span><br><span class="line">   entered correctly and the DNS A&#x2F;AAAA record(s) for that domain</span><br><span class="line">   contain(s) the right IP address. Additionally, please check that</span><br><span class="line">   your computer has a publicly routable IP address and that no</span><br><span class="line">   firewalls are preventing the server from communicating with the</span><br><span class="line">   client. If you&#39;re using the webroot plugin, you should also verify</span><br><span class="line">   that you are serving files from the webroot path you provided.</span><br></pre></td></tr></table></figure>
 
 <p><strong>这个问题的解决办法：配置nginx，启动nginx，保证能够正常访问nginx，如果跟换了域名，需要将原来https配置都先注释掉，先保证能够通过http正常访问nginx服务</strong>。</p>
 <p>然后再次运行注册证书代码成功：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Saving debug log to &#x2F;var&#x2F;log&#x2F;letsencrypt&#x2F;letsencrypt.log</span><br><span class="line">Plugins selected: Authenticator webroot, Installer None</span><br><span class="line">Obtaining a new certificate</span><br><span class="line">Performing the following challenges:</span><br><span class="line">http-01 challenge for tding.top</span><br><span class="line">Using the webroot path &#x2F;var&#x2F;www&#x2F;blog for all unmatched domains.</span><br><span class="line">Waiting for verification...</span><br><span class="line">Cleaning up challenges</span><br><span class="line"></span><br><span class="line">IMPORTANT NOTES:</span><br><span class="line"> - Congratulations! Your certificate and chain have been saved at:</span><br><span class="line">   &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;tding.top&#x2F;fullchain.pem</span><br><span class="line">   Your key file has been saved at:</span><br><span class="line">   &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;tding.top&#x2F;privkey.pem</span><br><span class="line">   Your cert will expire on 2019-11-18. To obtain a new or tweaked</span><br><span class="line">   version of this certificate in the future, simply run</span><br><span class="line">   letsencrypt-auto again. To non-interactively renew *all* of your</span><br><span class="line">   certificates, run &quot;letsencrypt-auto renew&quot;</span><br><span class="line"> - If you like Certbot, please consider supporting our work by:</span><br><span class="line"></span><br><span class="line">   Donating to ISRG &#x2F; Let&#39;s Encrypt:   https:&#x2F;&#x2F;letsencrypt.org&#x2F;donate</span><br><span class="line">   Donating to EFF:                    https:&#x2F;&#x2F;eff.org&#x2F;donate-le</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Saving debug log to &#x2F;var&#x2F;log&#x2F;letsencrypt&#x2F;letsencrypt.log</span><br><span class="line">Plugins selected: Authenticator webroot, Installer None</span><br><span class="line">Obtaining a new certificate</span><br><span class="line">Performing the following challenges:</span><br><span class="line">http-01 challenge for loye168.github.io</span><br><span class="line">Using the webroot path &#x2F;var&#x2F;www&#x2F;blog for all unmatched domains.</span><br><span class="line">Waiting for verification...</span><br><span class="line">Cleaning up challenges</span><br><span class="line"></span><br><span class="line">IMPORTANT NOTES:</span><br><span class="line"> - Congratulations! Your certificate and chain have been saved at:</span><br><span class="line">   &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;loye168.github.io&#x2F;fullchain.pem</span><br><span class="line">   Your key file has been saved at:</span><br><span class="line">   &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;loye168.github.io&#x2F;privkey.pem</span><br><span class="line">   Your cert will expire on 2019-11-18. To obtain a new or tweaked</span><br><span class="line">   version of this certificate in the future, simply run</span><br><span class="line">   letsencrypt-auto again. To non-interactively renew *all* of your</span><br><span class="line">   certificates, run &quot;letsencrypt-auto renew&quot;</span><br><span class="line"> - If you like Certbot, please consider supporting our work by:</span><br><span class="line"></span><br><span class="line">   Donating to ISRG &#x2F; Let&#39;s Encrypt:   https:&#x2F;&#x2F;letsencrypt.org&#x2F;donate</span><br><span class="line">   Donating to EFF:                    https:&#x2F;&#x2F;eff.org&#x2F;donate-le</span><br></pre></td></tr></table></figure>
 
 <h2 id="Nginx配置-指向静态文件"><a href="#Nginx配置-指向静态文件" class="headerlink" title="Nginx配置-指向静态文件"></a>Nginx配置-指向静态文件</h2><p>直到这一步，证书已经就绪，只要配置好Nginx即可完美升级https。</p>
 <p>Nginx配置各有各的配置方法，这里只要保证四点：</p>
@@ -27311,7 +27311,7 @@
 <li>要保证80默认端口和443ssl端口都有配置</li>
 </ul>
 <p>下面是一个Nginx配置例子：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name tding.top; # 这里写你的域名</span><br><span class="line">    location ^~ &#x2F;.well-known&#x2F;acme-challenge&#x2F; &#123;</span><br><span class="line">        default_type &quot;text&#x2F;plain&quot;;</span><br><span class="line">        root &#x2F;var&#x2F;www&#x2F;blog; # 这里写你的静态文件目录</span><br><span class="line">    &#125;</span><br><span class="line">    location &#x3D; &#x2F;.well-known&#x2F;acme-challenge&#x2F; &#123;</span><br><span class="line">        return 404;</span><br><span class="line">    &#125;</span><br><span class="line">    return 301 https:&#x2F;&#x2F;$server_name$request_uri;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">    # SSL Configuration</span><br><span class="line">    listen 443 ssl;</span><br><span class="line">    server_name tding.top;  # 这里写你的域名</span><br><span class="line">    # specify cert files</span><br><span class="line">    ssl_certificate &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;tding.top&#x2F;fullchain.pem;  # 中间写你的域名</span><br><span class="line">    ssl_certificate_key &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;tding.top&#x2F;privkey.pem;  # 中间写你的域名</span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        root  &#x2F;var&#x2F;www&#x2F;blog; # 这里写你的静态文件目录</span><br><span class="line">        index index.html index.htm; # 这里写你暴露的静态文件</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name loye168.github.io; # 这里写你的域名</span><br><span class="line">    location ^~ &#x2F;.well-known&#x2F;acme-challenge&#x2F; &#123;</span><br><span class="line">        default_type &quot;text&#x2F;plain&quot;;</span><br><span class="line">        root &#x2F;var&#x2F;www&#x2F;blog; # 这里写你的静态文件目录</span><br><span class="line">    &#125;</span><br><span class="line">    location &#x3D; &#x2F;.well-known&#x2F;acme-challenge&#x2F; &#123;</span><br><span class="line">        return 404;</span><br><span class="line">    &#125;</span><br><span class="line">    return 301 https:&#x2F;&#x2F;$server_name$request_uri;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">    # SSL Configuration</span><br><span class="line">    listen 443 ssl;</span><br><span class="line">    server_name loye168.github.io;  # 这里写你的域名</span><br><span class="line">    # specify cert files</span><br><span class="line">    ssl_certificate &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;loye168.github.io&#x2F;fullchain.pem;  # 中间写你的域名</span><br><span class="line">    ssl_certificate_key &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;loye168.github.io&#x2F;privkey.pem;  # 中间写你的域名</span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        root  &#x2F;var&#x2F;www&#x2F;blog; # 这里写你的静态文件目录</span><br><span class="line">        index index.html index.htm; # 这里写你暴露的静态文件</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="自动更新证书"><a href="#自动更新证书" class="headerlink" title="自动更新证书"></a>自动更新证书</h2><p>letsencrypt证书最多只有90天，90天之后我们需要重新注册证书，当然这个可以交给服务器自己做啦。</p>
 <p>验证自己的证书是否可以更新</p>
@@ -27691,7 +27691,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/nginx/sites-available               //切换目录</span><br><span class="line">cp default default.bak                  //备份默认配置</span><br><span class="line">vim default                     //修改配置</span><br></pre></td></tr></table></figure>
 
 <p>参考配置文件内容：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80 default;              #默认监听80端口</span><br><span class="line">    root &#x2F;var&#x2F;www&#x2F;blog;             #网站根目录</span><br><span class="line">    server_name tding.top, www.tding.top;  #网址</span><br><span class="line">    access_log  &#x2F;var&#x2F;log&#x2F;nginx&#x2F;blog_access.log;</span><br><span class="line">    error_log   &#x2F;var&#x2F;log&#x2F;nginx&#x2F;blog_error.log;</span><br><span class="line">    error_page 404 &#x3D;  &#x2F;404.html;</span><br><span class="line"></span><br><span class="line">    location ~* ^.+\.(ico|gif|jpg|jpeg|png)$ &#123;</span><br><span class="line">        root &#x2F;var&#x2F;www&#x2F;blog;</span><br><span class="line">        access_log   off;</span><br><span class="line">        expires      1d;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~* ^.+\.(css|js|txt|xml|swf|wav)$ &#123;</span><br><span class="line">        root &#x2F;var&#x2F;www&#x2F;blog;</span><br><span class="line">        access_log   off;</span><br><span class="line">        expires      10m;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        root &#x2F;var&#x2F;www&#x2F;blog;</span><br><span class="line">        if (-f $request_filename) &#123;</span><br><span class="line">        rewrite ^&#x2F;(.*)$  &#x2F;$1 break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location &#x2F;nginx_status &#123;</span><br><span class="line">        stub_status on;</span><br><span class="line">        access_log off;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80 default;              #默认监听80端口</span><br><span class="line">    root &#x2F;var&#x2F;www&#x2F;blog;             #网站根目录</span><br><span class="line">    server_name loye168.github.io, www.loye168.github.io;  #网址</span><br><span class="line">    access_log  &#x2F;var&#x2F;log&#x2F;nginx&#x2F;blog_access.log;</span><br><span class="line">    error_log   &#x2F;var&#x2F;log&#x2F;nginx&#x2F;blog_error.log;</span><br><span class="line">    error_page 404 &#x3D;  &#x2F;404.html;</span><br><span class="line"></span><br><span class="line">    location ~* ^.+\.(ico|gif|jpg|jpeg|png)$ &#123;</span><br><span class="line">        root &#x2F;var&#x2F;www&#x2F;blog;</span><br><span class="line">        access_log   off;</span><br><span class="line">        expires      1d;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~* ^.+\.(css|js|txt|xml|swf|wav)$ &#123;</span><br><span class="line">        root &#x2F;var&#x2F;www&#x2F;blog;</span><br><span class="line">        access_log   off;</span><br><span class="line">        expires      10m;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        root &#x2F;var&#x2F;www&#x2F;blog;</span><br><span class="line">        if (-f $request_filename) &#123;</span><br><span class="line">        rewrite ^&#x2F;(.*)$  &#x2F;$1 break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location &#x2F;nginx_status &#123;</span><br><span class="line">        stub_status on;</span><br><span class="line">        access_log off;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>保存退出后，启动nginx：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">systemctl start nginx</span><br></pre></td></tr></table></figure>
@@ -27936,21 +27936,21 @@
 </ul>
 <p>注意：最好添加<code>&lt;div&gt;</code>标签，测试时没加 div，下面显示不完全，加上非常美观。</p>
 <p>一个示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;&#123;% button https:&#x2F;&#x2F;tding.top&#x2F; ,首页,home fa-fw,这是loye的个人博客首页%&#125;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;&#123;% button https:&#x2F;&#x2F;loye168.github.io&#x2F; ,首页,home fa-fw,这是loye的个人博客首页%&#125;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
 
 <p>显示效果：</p>
-<div><a class="btn" href="https://tding.top/ " title="这是loye的个人博客首页">
+<div><a class="btn" href="https://loye168.github.io/ " title="这是loye的个人博客首页">
             <i class="fa fa-home fa-fw"></i>首页
           </a></div>
 
 <p>多个按钮居中显示：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;text-center&quot;&gt;&lt;div&gt;&#123;% button https:&#x2F;&#x2F;tding.top&#x2F; ,首页,home fa-fw,这是loye的个人博客首页%&#125; &#123;% button https:&#x2F;&#x2F;tding.top&#x2F;movies&#x2F; ,观影,film fa-fw,豆瓣电影%&#125; &#123;% button https:&#x2F;&#x2F;tding.top&#x2F;books&#x2F; ,阅读,book fa-fw,豆瓣读书%&#125;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;text-center&quot;&gt;&lt;div&gt;&#123;% button https:&#x2F;&#x2F;loye168.github.io&#x2F; ,首页,home fa-fw,这是loye的个人博客首页%&#125; &#123;% button https:&#x2F;&#x2F;loye168.github.io&#x2F;movies&#x2F; ,观影,film fa-fw,豆瓣电影%&#125; &#123;% button https:&#x2F;&#x2F;loye168.github.io&#x2F;books&#x2F; ,阅读,book fa-fw,豆瓣读书%&#125;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
 
-<div class="text-center"><div><a class="btn" href="https://tding.top/ " title="这是loye的个人博客首页">
+<div class="text-center"><div><a class="btn" href="https://loye168.github.io/ " title="这是loye的个人博客首页">
             <i class="fa fa-home fa-fw"></i>首页
-          </a> <a class="btn" href="https://tding.top/movies/ " title="豆瓣电影">
+          </a> <a class="btn" href="https://loye168.github.io/movies/ " title="豆瓣电影">
             <i class="fa fa-film fa-fw"></i>观影
-          </a> <a class="btn" href="https://tding.top/books/ " title="豆瓣读书">
+          </a> <a class="btn" href="https://loye168.github.io/books/ " title="豆瓣读书">
             <i class="fa fa-book fa-fw"></i>阅读
           </a></div></div>
 ]]></content>
@@ -28335,19 +28335,19 @@
 <p>其中 <code>185.199.108.153</code> 和 <code>185.199.109.153</code> 都是 GitHub 的地址。</p>
 <p>上述设置的解释：</p>
 <ul>
-<li>设置 A 记录的意思是，当我输入 <code>tding.top</code> 这个域名的时候，访问的是 <code>185.199.108.153</code> 这个地址；</li>
-<li>设置 CNAME 的意思是，当我访问 <code>dta0502.github.io</code> 这个地址的时候，会跳转到 <code>tding.top</code>，之后的过程就和 A 记录相同了，即访问 <code>185.199.108.153</code>。</li>
+<li>设置 A 记录的意思是，当我输入 <code>loye168.github.io</code> 这个域名的时候，访问的是 <code>185.199.108.153</code> 这个地址；</li>
+<li>设置 CNAME 的意思是，当我访问 <code>dta0502.github.io</code> 这个地址的时候，会跳转到 <code>loye168.github.io</code>，之后的过程就和 A 记录相同了，即访问 <code>185.199.108.153</code>。</li>
 </ul>
 <h2 id="添加CNAME文件"><a href="#添加CNAME文件" class="headerlink" title="添加CNAME文件"></a>添加CNAME文件</h2><p>在Hexo本地目录中的source文件夹里，添加一个命名为CNAME的无后缀文件，文件中的填写你的域名。</p>
 <p>如果你想让地址栏的域名显示www前缀就输入<code>www.xxxxx.com</code>，否则输入<code>xxxxx.com</code>即可。</p>
 <p>例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tding.top</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">loye168.github.io</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <h2 id="Github-Pages对自定义域上Https"><a href="#Github-Pages对自定义域上Https" class="headerlink" title="Github Pages对自定义域上Https"></a>Github Pages对自定义域上Https</h2><p>然后我们在 Github Pages 项目中 Settings 选项卡 Github Pages 选项：在 Custom domain 添加你的自定义域名。 </p>
 <blockquote>
-<p>例如我配置apex domain「tding.top」点击 save 保存 </p>
+<p>例如我配置apex domain「loye168.github.io」点击 save 保存 </p>
 </blockquote>
 <p>刷新页面 如果能勾选 Enforce HTTPS 即完成。</p>
 <img src="/archives/b48e2719/8.png" class="" title="图8">
@@ -28372,7 +28372,7 @@
   <entry>
     <title>Hexo-NexT(v7.0+)主题配置</title>
     <url>/archives/42c38b10.html</url>
-    <content><![CDATA[<p><strong>写在前面：本文配置适用于NexT-7.1.2，现在（2020年1月13日）NexT主题已经更新至7.7.0，不少配置已经改变，大家可以结合一下这两篇文章：<a href="https://tding.top/archives/2bd6d82.html">Hexo-NexT 版本更新记录</a>、<a href="https://tding.top/archives/567debe0.html">本博客当前使用的插件总结</a></strong>。</p>
+    <content><![CDATA[<p><strong>写在前面：本文配置适用于NexT-7.1.2，现在（2020年1月13日）NexT主题已经更新至7.7.0，不少配置已经改变，大家可以结合一下这两篇文章：<a href="https://loye168.github.io/archives/2bd6d82.html">Hexo-NexT 版本更新记录</a>、<a href="https://loye168.github.io/archives/567debe0.html">本博客当前使用的插件总结</a></strong>。</p>
 <a id="more"></a>
 
 <h2 id="一、获取NexT"><a href="#一、获取NexT" class="headerlink" title="一、获取NexT"></a>一、获取NexT</h2><h3 id="1、下载最新-release-版本"><a href="#1、下载最新-release-版本" class="headerlink" title="1、下载最新 release 版本"></a>1、下载<a href="https://github.com/theme-next/hexo-theme-next/releases/latest" target="_blank" rel="noopener external nofollow noreferrer">最新 release 版本</a></h3><p>通常情况下请选择 stable 版本。推荐不熟悉的用户按此方式进行。</p>
@@ -28388,9 +28388,9 @@
 
 <p>注意：博客框架默认的语言是英文，我们需要到<code>/themes/next/languages</code>目录下，查看当前NexT版本简体中文对照文件的名称是<code>zh-Hans</code>还是<code>zh-CN</code>。这里是<code>zh-CN</code>。</p>
 <h3 id="3、设置hexo永久链接"><a href="#3、设置hexo永久链接" class="headerlink" title="3、设置hexo永久链接"></a>3、设置hexo永久链接</h3><p>我们在站点的配置文件<code>_config.yml</code>中，修改：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://tding.top/</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">archives/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://loye168.github.io/</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">archives/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
 
-<p>注：这个文章永久链接设置需要安装插件，详细安装配置过程见：<a href="https://tding.top/archives/567debe0.html">本博客当前使用的插件总结</a>中的<strong>Hexo 文章永久链接插件</strong>。</p>
+<p>注：这个文章永久链接设置需要安装插件，详细安装配置过程见：<a href="https://loye168.github.io/archives/567debe0.html">本博客当前使用的插件总结</a>中的<strong>Hexo 文章永久链接插件</strong>。</p>
 <h3 id="4、nofollow标签的使用"><a href="#4、nofollow标签的使用" class="headerlink" title="4、nofollow标签的使用"></a>4、nofollow标签的使用</h3><p>减少出站链接能够有效防止权重分散，hexo有很方便的自动为出站链接添加<code>nofollow</code>标签的插件。</p>
 <p>首先安装<code>hexo-filter-nofollow</code>插件：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-nofollow --save</span><br></pre></td></tr></table></figure>
@@ -28470,7 +28470,7 @@
 <p>友链配置：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Blog rolls</span></span><br><span class="line"><span class="attr">links_icon:</span> <span class="string">link</span>          <span class="comment"># 友链的图标 参考上文</span></span><br><span class="line"><span class="attr">links_title:</span> <span class="string">Links</span>        <span class="comment"># 友链的title  比如你可以更改为 友情链接</span></span><br><span class="line"><span class="attr">links_layout:</span> <span class="string">block</span>       <span class="comment"># 友链摆放的样式：按块（一行一个）</span></span><br><span class="line"><span class="comment">#links_layout: inline     # 友链摆放的样式：按线摆放（一行很多个），注意，同时只能一种样式</span></span><br><span class="line"><span class="attr">links:</span></span><br><span class="line">  <span class="attr">Title:</span> <span class="string">http://example.com/</span>  <span class="comment"># 友链的地址</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>官方提供的友链放在侧边栏下面，视觉上比较臃肿。这里我新建了一个友链页面：<a href="https://tding.top/about/links.html">友情链接</a>，设置教程见：<a href="https://tding.top/archives/73ce4e7.html">Hexo-NexT 新增友链</a>。</strong></p>
+<p><strong>官方提供的友链放在侧边栏下面，视觉上比较臃肿。这里我新建了一个友链页面：<a href="https://loye168.github.io/about/links.html">友情链接</a>，设置教程见：<a href="https://loye168.github.io/archives/73ce4e7.html">Hexo-NexT 新增友链</a>。</strong></p>
 <h3 id="9、首页文章不展示全文显示摘要"><a href="#9、首页文章不展示全文显示摘要" class="headerlink" title="9、首页文章不展示全文显示摘要"></a>9、首页文章不展示全文显示摘要</h3><p>我们可以在主题配置文件中设置：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">scroll_to_more:</span> <span class="literal">true</span>      <span class="comment"># 点击阅读全文后是否跳到&lt;!--more--&gt;标记处,设为false时点击阅读全文可以从头阅读</span></span><br><span class="line"></span><br><span class="line"><span class="attr">save_scroll:</span> <span class="literal">false</span>        <span class="comment"># 自动保存每篇文章或页面上一次滚动的地方</span></span><br><span class="line"></span><br><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span> <span class="comment"># 自动在首页对文章进行摘要描述作为前言文本</span></span><br><span class="line"></span><br><span class="line"><span class="attr">auto_excerpt:</span>   <span class="comment"># 是否自动截取摘要</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># 设置为true则自动截取150字当做首页摘要</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span>   <span class="comment"># 自动截取的字数</span></span><br></pre></td></tr></table></figure>
 
@@ -33004,7 +33004,7 @@ memory usage: 20.1+ MB</code></pre><h2 id="四、排序函数"><a href="#四、�
 <li>Node.js</li>
 <li>Git</li>
 </ul>
-<p>Git初始化安装配置详见：<a href="https://tding.top/archives/b0004f5f.html">GitHub 初始化配置</a></p>
+<p>Git初始化安装配置详见：<a href="https://loye168.github.io/archives/b0004f5f.html">GitHub 初始化配置</a></p>
 <h2 id="Hexo原理简要介绍"><a href="#Hexo原理简要介绍" class="headerlink" title="Hexo原理简要介绍"></a>Hexo原理简要介绍</h2><p>由于GitHub Pages存放的都是<strong>静态文件</strong>，博客存放的不只是文章内容，还有文章列表、分类、标签、翻页等动态内容，假如每次写完一篇文章都要手动更新博文目录和相关链接信息，那就太繁琐了，毕竟博客的关键是内容，hexo做的就是将这些md文件都放在本地，<strong>每次写完文章后框架会批量生成相关页面</strong>，然后我们只需要将生成的静态文件提交到GitHub即可。</p>
 <p>注意：建议使用<code>Git Bash</code>来执行后续的所有命令。</p>
 <h2 id="GitHub-Pages上搭建博客"><a href="#GitHub-Pages上搭建博客" class="headerlink" title="GitHub Pages上搭建博客"></a>GitHub Pages上搭建博客</h2><h3 id="GitHub创建仓库"><a href="#GitHub创建仓库" class="headerlink" title="GitHub创建仓库"></a>GitHub创建仓库</h3><p>新建一个名为<code>你的用户名.github.io</code>的仓库，比如说，如果你的GitHub用户名是<code>dta0502</code>，那么你就新建<code>dta0502.github.io</code>的仓库，将来你的网站访问地址就是 <a href="https://dta0502.github.io" target="_blank" rel="noopener external nofollow noreferrer">https://dta0502.github.io</a>。</p>
@@ -33078,7 +33078,7 @@ memory usage: 20.1+ MB</code></pre><h2 id="四、排序函数"><a href="#四、�
 
 <h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
 <li><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener external nofollow noreferrer">使用hexo+github搭建免费个人博客详细教程</a></li>
-<li><a href="https://tding.top/archives/b0004f5f.html">GitHub 初始化配置</a></li>
+<li><a href="https://loye168.github.io/archives/b0004f5f.html">GitHub 初始化配置</a></li>
 </ul>
 ]]></content>
       <categories>
