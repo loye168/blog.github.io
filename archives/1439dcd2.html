@@ -25,72 +25,72 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tding.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"buttons","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"loye168.github.io","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"buttons","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="本文主要记录Matplotlib中的曲线、点号的样式，便于后续查询。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Matplotlib系列之LineStyles及Markers">
-<meta property="og:url" content="https://tding.top/archives/1439dcd2.html">
+<meta property="og:url" content="https://loye168.github.io/archives/1439dcd2.html">
 <meta property="og:site_name" content="loye的个人博客">
 <meta property="og:description" content="本文主要记录Matplotlib中的曲线、点号的样式，便于后续查询。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle--.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle---.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle--dot.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-3A.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-dot.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-o.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-%5E.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-v.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-3C.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-3E.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-s.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-+.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-x.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-dd.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-d.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-1.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-2.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-3.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-4.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-h.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-hh.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-p.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-7C.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/linestyle-5F.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-i0.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-i1.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-i2.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-i3.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-i4.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-i5.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-i6.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-i7.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-o.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-dd.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-h.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-hh.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-5F.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-1.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-2.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-3.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-4.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-8.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-p.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-5E.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-v.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-3C.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-3E.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-d.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-2C.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-+.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-dot.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-s.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-2A.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-7C.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-x.png">
-<meta property="og:image" content="https://tding.top/archives/1439dcd2/marker-latex.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle--.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle---.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle--dot.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-3A.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-dot.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-o.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-%5E.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-v.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-3C.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-3E.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-s.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-+.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-x.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-dd.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-d.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-1.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-2.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-3.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-4.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-h.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-hh.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-p.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-7C.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/linestyle-5F.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-i0.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-i1.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-i2.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-i3.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-i4.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-i5.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-i6.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-i7.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-o.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-dd.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-h.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-hh.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-5F.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-1.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-2.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-3.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-4.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-8.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-p.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-5E.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-v.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-3C.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-3E.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-d.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-2C.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-+.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-dot.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-s.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-2A.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-7C.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-x.png">
+<meta property="og:image" content="https://loye168.github.io/archives/1439dcd2/marker-latex.png">
 <meta property="article:published_time" content="2020-01-23T13:10:00.000Z">
 <meta property="article:modified_time" content="2020-01-23T13:19:42.280Z">
 <meta property="article:author" content="loye">
@@ -98,9 +98,9 @@
 <meta property="article:tag" content="matplotlib">
 <meta property="article:tag" content="数据可视化">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tding.top/archives/1439dcd2/linestyle--.png">
+<meta name="twitter:image" content="https://loye168.github.io/archives/1439dcd2/linestyle--.png">
 
-<link rel="canonical" href="https://tding.top/archives/1439dcd2.html">
+<link rel="canonical" href="https://loye168.github.io/archives/1439dcd2.html">
 
 
 <script id="page-configurations">
@@ -318,7 +318,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tding.top/archives/1439dcd2.html">
+    <link itemprop="mainEntityOfPage" href="https://loye168.github.io/archives/1439dcd2.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.webp">
@@ -780,7 +780,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://tding.top/archives/1439dcd2.html" title="Matplotlib系列之LineStyles及Markers">https://tding.top/archives/1439dcd2.html</a>
+    <a href="https://loye168.github.io/archives/1439dcd2.html" title="Matplotlib系列之LineStyles及Markers">https://loye168.github.io/archives/1439dcd2.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -1330,7 +1330,7 @@ if(canvas.getContext){
 <script type="text/javascript">
 var defaultEncoding = 2;
 var translateDelay = 0;
-var cookieDomain = "https://tding.top/";
+var cookieDomain = "https://loye168.github.io/";
 var msgToTraditionalChinese = "繁体";
 var msgToSimplifiedChinese = "简体";
 var translateButtonId = "translateLink";
@@ -1452,7 +1452,7 @@ translateInitilization();
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri == 'https://tding.top/archives/1439dcd2.html',]
+        ignores : [uri => uri.includes('#'),uri => uri == 'https://loye168.github.io/archives/1439dcd2.html',]
       });
       });
   </script>
@@ -1569,7 +1569,7 @@ const back2bottom = () => {
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://tding.top/archives/1439dcd2.html";
+    this.page.url = "https://loye168.github.io/archives/1439dcd2.html";
     this.page.identifier = "archives/1439dcd2.html";
     this.page.title = "Matplotlib系列之LineStyles及Markers";
     };

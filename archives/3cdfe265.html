@@ -25,13 +25,13 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tding.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"buttons","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"loye168.github.io","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"buttons","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="本文主要介绍如何在Hexo上实现简体&#x2F;繁体一键切换。 简体繁体切换的基本原理：首先建立一个简体字与繁体字相对应的映射表，然后遍历整个界面，把相应的简体字或者是繁体字映射为对应的字体即可。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-NexT支持简体繁体一键切换">
-<meta property="og:url" content="https://tding.top/archives/3cdfe265.html">
+<meta property="og:url" content="https://loye168.github.io/archives/3cdfe265.html">
 <meta property="og:site_name" content="loye的个人博客">
 <meta property="og:description" content="本文主要介绍如何在Hexo上实现简体&#x2F;繁体一键切换。 简体繁体切换的基本原理：首先建立一个简体字与繁体字相对应的映射表，然后遍历整个界面，把相应的简体字或者是繁体字映射为对应的字体即可。">
 <meta property="og:locale" content="zh_CN">
@@ -43,7 +43,7 @@
 <meta property="article:tag" content="字体">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://tding.top/archives/3cdfe265.html">
+<link rel="canonical" href="https://loye168.github.io/archives/3cdfe265.html">
 
 
 <script id="page-configurations">
@@ -261,7 +261,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tding.top/archives/3cdfe265.html">
+    <link itemprop="mainEntityOfPage" href="https://loye168.github.io/archives/3cdfe265.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.webp">
@@ -366,12 +366,12 @@
 <a id="more"></a>
 
 <h2 id="Hexo实现过程"><a href="#Hexo实现过程" class="headerlink" title="Hexo实现过程"></a>Hexo实现过程</h2><ol>
-<li><p>首先，我们可以在<a href="https://tding.top/js/tw_cn.js">这里</a>右键另存下载简繁字体切换所需的<code>tw_cn.js</code>文件，我们把这个文件放到<code>~/themes/next/source/js</code>文件夹下。</p>
+<li><p>首先，我们可以在<a href="https://loye168.github.io/js/tw_cn.js">这里</a>右键另存下载简繁字体切换所需的<code>tw_cn.js</code>文件，我们把这个文件放到<code>~/themes/next/source/js</code>文件夹下。</p>
 </li>
 <li><p><strong>修改模板</strong>，在我们想要显示简繁转换按钮的地方添加如下代码。例如，我在NexT主题的布局文件<code>~/themes/next/layout/_partials/footer.swig</code>里添加了如下代码：</p>
 </li>
 </ol>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"translate-style"</span>&gt;</span></span><br><span class="line">繁/简：<span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">"translateLink"</span> <span class="attr">href</span>=<span class="string">"javascript:translatePage();"</span>&gt;</span>繁体</span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/tw_cn.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> defaultEncoding = <span class="number">2</span>; <span class="comment">//网站编写字体是否繁体，1-繁体，2-简体</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> translateDelay = <span class="number">0</span>; <span class="comment">//延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> cookieDomain = <span class="string">"https://tding.top/"</span>; <span class="comment">//Cookie地址, 一定要设定, 通常为你的网址</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> msgToTraditionalChinese = <span class="string">"繁体"</span>; <span class="comment">//此处可以更改为你想要显示的文字</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> msgToSimplifiedChinese = <span class="string">"简体"</span>; <span class="comment">//同上，但两处均不建议更改</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> translateButtonId = <span class="string">"translateLink"</span>; <span class="comment">//默认互换id</span></span></span><br><span class="line">translateInitilization();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"translate-style"</span>&gt;</span></span><br><span class="line">繁/简：<span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">"translateLink"</span> <span class="attr">href</span>=<span class="string">"javascript:translatePage();"</span>&gt;</span>繁体</span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/tw_cn.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> defaultEncoding = <span class="number">2</span>; <span class="comment">//网站编写字体是否繁体，1-繁体，2-简体</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> translateDelay = <span class="number">0</span>; <span class="comment">//延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> cookieDomain = <span class="string">"https://loye168.github.io/"</span>; <span class="comment">//Cookie地址, 一定要设定, 通常为你的网址</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> msgToTraditionalChinese = <span class="string">"繁体"</span>; <span class="comment">//此处可以更改为你想要显示的文字</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> msgToSimplifiedChinese = <span class="string">"简体"</span>; <span class="comment">//同上，但两处均不建议更改</span></span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> translateButtonId = <span class="string">"translateLink"</span>; <span class="comment">//默认互换id</span></span></span><br><span class="line">translateInitilization();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>读者可以在<strong>博客底部点击简体/繁体</strong>来看具体的切换字体效果。</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
@@ -437,7 +437,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://tding.top/archives/3cdfe265.html" title="Hexo-NexT支持简体繁体一键切换">https://tding.top/archives/3cdfe265.html</a>
+    <a href="https://loye168.github.io/archives/3cdfe265.html" title="Hexo-NexT支持简体繁体一键切换">https://loye168.github.io/archives/3cdfe265.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -987,7 +987,7 @@ if(canvas.getContext){
 <script type="text/javascript">
 var defaultEncoding = 2;
 var translateDelay = 0;
-var cookieDomain = "https://tding.top/";
+var cookieDomain = "https://loye168.github.io/";
 var msgToTraditionalChinese = "繁体";
 var msgToSimplifiedChinese = "简体";
 var translateButtonId = "translateLink";
@@ -1109,7 +1109,7 @@ translateInitilization();
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri == 'https://tding.top/archives/3cdfe265.html',]
+        ignores : [uri => uri.includes('#'),uri => uri == 'https://loye168.github.io/archives/3cdfe265.html',]
       });
       });
   </script>
@@ -1226,7 +1226,7 @@ const back2bottom = () => {
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://tding.top/archives/3cdfe265.html";
+    this.page.url = "https://loye168.github.io/archives/3cdfe265.html";
     this.page.identifier = "archives/3cdfe265.html";
     this.page.title = "Hexo-NexT支持简体繁体一键切换";
     };

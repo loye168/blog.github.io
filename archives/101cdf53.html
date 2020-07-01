@@ -25,32 +25,32 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tding.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"buttons","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"loye168.github.io","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"buttons","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="树是一种以层次化方式组织和存放数据的特定数据结构。 树有两个主要特征：  每个项都有多个子节点 除了叫做根的特殊的项，所有其他的项都只有一个父节点  二叉树(binary tree)是一种特殊的树结构，它每个节点最多有两个子结点，亦称左孩子和右孩子。 这里总结了LeetCode中二叉树相关的题目，我把这些题目分成了以下五个部分：  二叉树的性质相关题目 二叉树的遍历相关题目 路径和相关题目 二叉树">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode题目总结-二叉树">
-<meta property="og:url" content="https://tding.top/archives/101cdf53.html">
+<meta property="og:url" content="https://loye168.github.io/archives/101cdf53.html">
 <meta property="og:site_name" content="loye的个人博客">
 <meta property="og:description" content="树是一种以层次化方式组织和存放数据的特定数据结构。 树有两个主要特征：  每个项都有多个子节点 除了叫做根的特殊的项，所有其他的项都只有一个父节点  二叉树(binary tree)是一种特殊的树结构，它每个节点最多有两个子结点，亦称左孩子和右孩子。 这里总结了LeetCode中二叉树相关的题目，我把这些题目分成了以下五个部分：  二叉树的性质相关题目 二叉树的遍历相关题目 路径和相关题目 二叉树">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tding.top/archives/101cdf53/100-1.png">
-<meta property="og:image" content="https://tding.top/archives/101cdf53/100-2.png">
-<meta property="og:image" content="https://tding.top/archives/101cdf53/100-3.png">
-<meta property="og:image" content="https://tding.top/archives/101cdf53/101-1.png">
-<meta property="og:image" content="https://tding.top/archives/101cdf53/105-1.png">
-<meta property="og:image" content="https://tding.top/archives/101cdf53/105-2.png">
-<meta property="og:image" content="https://tding.top/archives/101cdf53/106-1.png">
+<meta property="og:image" content="https://loye168.github.io/archives/101cdf53/100-1.png">
+<meta property="og:image" content="https://loye168.github.io/archives/101cdf53/100-2.png">
+<meta property="og:image" content="https://loye168.github.io/archives/101cdf53/100-3.png">
+<meta property="og:image" content="https://loye168.github.io/archives/101cdf53/101-1.png">
+<meta property="og:image" content="https://loye168.github.io/archives/101cdf53/105-1.png">
+<meta property="og:image" content="https://loye168.github.io/archives/101cdf53/105-2.png">
+<meta property="og:image" content="https://loye168.github.io/archives/101cdf53/106-1.png">
 <meta property="article:published_time" content="2019-12-03T16:30:00.000Z">
 <meta property="article:modified_time" content="2019-12-03T16:30:10.769Z">
 <meta property="article:author" content="loye">
 <meta property="article:tag" content="LeetCode">
 <meta property="article:tag" content="二叉树">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tding.top/archives/101cdf53/100-1.png">
+<meta name="twitter:image" content="https://loye168.github.io/archives/101cdf53/100-1.png">
 
-<link rel="canonical" href="https://tding.top/archives/101cdf53.html">
+<link rel="canonical" href="https://loye168.github.io/archives/101cdf53.html">
 
 
 <script id="page-configurations">
@@ -268,7 +268,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tding.top/archives/101cdf53.html">
+    <link itemprop="mainEntityOfPage" href="https://loye168.github.io/archives/101cdf53.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.webp">
@@ -605,7 +605,7 @@
 <li>515-在每个树行中找最大值</li>
 </ul>
 <h3 id="详细题解"><a href="#详细题解" class="headerlink" title="详细题解"></a>详细题解</h3><ul>
-<li><a href="https://tding.top/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
+<li><a href="https://loye168.github.io/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
 </ul>
 <h2 id="路径和相关题目"><a href="#路径和相关题目" class="headerlink" title="路径和相关题目"></a>路径和相关题目</h2><p>树的求和属于树的题目中比较常见的，因为可以有几种变体，灵活度比较高，也可以考察到对于树的数据结构和递归的理解。</p>
 <ul>
@@ -776,7 +776,7 @@
 <h2 id="二叉搜索树相关题目"><a href="#二叉搜索树相关题目" class="headerlink" title="二叉搜索树相关题目"></a>二叉搜索树相关题目</h2><p>二叉查找树既是一颗树，又带有特别的有序性质，所以考察的方式比较多而且灵活，属于面试题目中的常客。</p>
 <p>此部分详细题解见：</p>
 <ul>
-<li><a href="https://tding.top/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
+<li><a href="https://loye168.github.io/archives/5f8aadd1.html">LeetCode 题目总结 - 二叉搜索树</a></li>
 </ul>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
 <li><a href="https://juejin.im/post/5d9f0b9551882509165ff2a8" target="_blank" rel="noopener external nofollow noreferrer">LeetCode 前1000题二叉树题目系统总结（吐血推荐！）</a></li>
@@ -843,7 +843,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://tding.top/archives/101cdf53.html" title="LeetCode题目总结-二叉树">https://tding.top/archives/101cdf53.html</a>
+    <a href="https://loye168.github.io/archives/101cdf53.html" title="LeetCode题目总结-二叉树">https://loye168.github.io/archives/101cdf53.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -1392,7 +1392,7 @@ if(canvas.getContext){
 <script type="text/javascript">
 var defaultEncoding = 2;
 var translateDelay = 0;
-var cookieDomain = "https://tding.top/";
+var cookieDomain = "https://loye168.github.io/";
 var msgToTraditionalChinese = "繁体";
 var msgToSimplifiedChinese = "简体";
 var translateButtonId = "translateLink";
@@ -1569,7 +1569,7 @@ translateInitilization();
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri == 'https://tding.top/archives/101cdf53.html',]
+        ignores : [uri => uri.includes('#'),uri => uri == 'https://loye168.github.io/archives/101cdf53.html',]
       });
       });
   </script>
@@ -1686,7 +1686,7 @@ const back2bottom = () => {
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://tding.top/archives/101cdf53.html";
+    this.page.url = "https://loye168.github.io/archives/101cdf53.html";
     this.page.identifier = "archives/101cdf53.html";
     this.page.title = "LeetCode题目总结-二叉树";
     };
