@@ -18,5 +18,5 @@ Disallow: /fonts/
 Disallow: /lib/
 Disallow: /fancybox/
 
-Sitemap: https://loye168.github.io/sitemap.xml
-Sitemap: https://loye168.github.io/baidusitemap.xml
+Sitemap: https://blog.github.io/sitemap.xml
+Sitemap: https://blog.github.io/baidusitemap.xml
